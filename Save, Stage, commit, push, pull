@@ -1,0 +1,4 @@
+First after typing in a line of stuff, soon to be code, make sure to save. there is no auto saving
+Then stage the file, this will prep it for commiting WAIT you need to add a summary of what you did or you cannot commit the file.
+After commiting I need to push the file. becsue if I do not the file remins on my local hardrive but teach cannot tell that I actually did anything. PUSH sends the local changes I have made to the cloud aka my GITHUB cloud
+If i work on a seperate computer and I need my changes I can pull, allowing me to get the changes made from somewhere else.
