@@ -1,0 +1,30 @@
+{
+    Syntax 
+        the structure of the language
+        in this case C#
+
+Conventions a essential to read and write code
+     . or period is a full stop, it is seen between words within code like an adress
+        . allows you to accsess elements of a compound item
+           a compound item contains multile elements 
+
+; or semicolon is the toll used to end or terminate a statement 
+
+ { } do not need a ; at the end of ot to terminate the code
+        any statement inside of the { } do need the ; though
+
+    Indenting allows for an easier time reading your code SO DO it
+
+to add a single line comment use a double slash
+    //Comment// 
+a multiline comment use a single slash with an *
+    /* 
+    *
+    */
+        multi line comment can be used to disavle code by placing infront and after the code
+
+}
+
+I created my gitkraken account wrong so the email is not a real one so until I fix that all of my commits have to be via the gothub website.
+  I have been writing my code in gitkraken but it wont commit cuase it was a wrong email... If you dont belive me I can show you the note as they are in 3 diffrentplaces now...
+  my actual notes and gitkraken and now here
