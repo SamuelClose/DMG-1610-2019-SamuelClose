@@ -1,0 +1,14 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ScriptStart : MonoBehaviour {
+
+	// Use this for initialization or start
+	private void Start() 
+	{
+		print("Hello World"); 
+		print("I love you");
+		print("Nicu");
+	}
+}
