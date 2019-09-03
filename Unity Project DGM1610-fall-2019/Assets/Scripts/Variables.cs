@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -12,15 +13,13 @@ public class Variables : MonoBehaviour
 	public int intValue = 20;
 	public string stringValue = "Bob";
 	public int firepower;
-	public UnityEvent 
+	public UnityEvent Event;
 
 
-
-	private void OnTriggerEnter (Collider other) 
+	private void OnTriggerEnter(Collider other)
 	{
-		print("bob");
+		Event.Invoke();
 	}
-
 
 
 	// Use this for initialization
