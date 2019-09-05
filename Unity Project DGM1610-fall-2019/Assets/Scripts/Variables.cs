@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 
 public class Variables : MonoBehaviour
@@ -16,16 +17,10 @@ public class Variables : MonoBehaviour
 	public UnityEvent Event;
 
 
-	private void OnTriggerEnter (Collider other) {
-		Destroy(gameObject);     
+	private void OnTriggerEnter(Collider other)
+	{
+		if (!Input.GetKeyDown(KeyCode.DownArrow)) return;
+		Destroy(gameObject);
+		DontDestroyOnLoad(gameObject);
 	}
-
-
-	// Use this for initialization 
-
-	}
-	
-
-	// Update is called once per frame
-	
-
+}
