@@ -6,7 +6,7 @@ public class ScriptPractice :
 MonoBehaviour
 { 
 	
-	void update()
+	void Update()
 	{ 
 		if (Input.GetKeyDown(KeyCode.R))
 		{
@@ -21,9 +21,9 @@ MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.B))
 		{
 			GetComponent<Renderer>
-	().material.color = Color.blue;
-			}
+	().material.color = Color.blue; 
 		}
+	}
 	}
 
  	//following a tutorial on unity https://learn.unity.com/tutorial/scripts-as-behaviour-components?projectId=5c8920b4edbc2a113b6bc26a#5c8924ededbc2a113b6bc373

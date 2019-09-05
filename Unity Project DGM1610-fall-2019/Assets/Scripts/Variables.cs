@@ -16,20 +16,16 @@ public class Variables : MonoBehaviour
 	public UnityEvent Event;
 
 
-	private void OnTriggerEnter(Collider other)
-	{
-		Event.Invoke();
+	private void OnTriggerEnter (Collider other) {
+		Destroy(gameObject);     
 	}
 
 
-	// Use this for initialization
-	void Start () {
-		
+	// Use this for initialization 
+
 	}
 	
+
 	// Update is called once per frame
-	private void Update () {
-		
-	}
-}
+	
 
