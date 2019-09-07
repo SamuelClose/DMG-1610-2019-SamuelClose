@@ -59,9 +59,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\DoWhile.cs" />
+    <Compile Include="Assets\Scripts\ForLoop.cs" />
     <Compile Include="Assets\Scripts\ScriptPractice.cs" />
     <Compile Include="Assets\Scripts\ScriptStart.cs" />
     <Compile Include="Assets\Scripts\Variables.cs" />
+    <Compile Include="Assets\Scripts\WhileLoops.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/samclose/Desktop/DGM1610-fall-2019/DMG-1610-2019-SamuelClose/Unity Project DGM1610-fall-2019/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
