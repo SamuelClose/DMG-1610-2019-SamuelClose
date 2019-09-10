@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Class01.cs" />
     <Compile Include="Assets\Scripts\DoWhile.cs" />
     <Compile Include="Assets\Scripts\ForLoop.cs" />
     <Compile Include="Assets\Scripts\ScriptPractice.cs" />
