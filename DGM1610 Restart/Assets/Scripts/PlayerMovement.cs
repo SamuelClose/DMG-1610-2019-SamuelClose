@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,14 +9,14 @@ public class PlayerMovement : MonoBehaviour
     public float forewardForce = 500f;
     public float sidewaysForce = 500f;
     public float backwardsForce = 500f;
-
     void FixedUpdate()    //When using physics use FixedUpdate
     {
         if (Input.GetKey("w"))
         {
-            rb.AddForce(0,0,forewardForce * Time.deltaTime);
-        }
+            rb.AddForce(0, 0, forewardForce * Time.deltaTime);
 
+        }
+        
         if ( Input.GetKey("d"))
         {
             rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0 );
@@ -30,9 +31,6 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(0,0,-backwardsForce * Time.deltaTime );
         }
-
-
-
     }
 }
  

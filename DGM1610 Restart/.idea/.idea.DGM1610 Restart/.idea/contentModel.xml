@@ -7,7 +7,9 @@
         <e p="Scripts" t="Include">
           <e p="Float1.cs" t="Include" />
           <e p="FollowPlayer.cs" t="Include" />
+          <e p="PlayerHealth.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
+          <e p="PowerUps.cs" t="Include" />
           <e p="TriggerEvents.cs" t="Include" />
         </e>
       </e>
