@@ -383,7 +383,6 @@ GameObject:
   - component: {fileID: 1178729727}
   - component: {fileID: 1178729726}
   - component: {fileID: 1178729725}
-  - component: {fileID: 1178729731}
   m_Layer: 0
   m_Name: AmmoBox
   m_TagString: Untagged
@@ -508,19 +507,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1178729731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1178729724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86fb087f25fbe4a2fa3055c928cc6d1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  powerUp: 0
 --- !u!1 &1567816608
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,7 +521,6 @@ GameObject:
   - component: {fileID: 1567816611}
   - component: {fileID: 1567816610}
   - component: {fileID: 1567816609}
-  - component: {fileID: 1567816615}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: Untagged
@@ -659,19 +644,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1567816615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1567816608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86fb087f25fbe4a2fa3055c928cc6d1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  powerUp: 0
 --- !u!1 &1608180335
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,9 +659,10 @@ GameObject:
   - component: {fileID: 1608180336}
   - component: {fileID: 1608180341}
   - component: {fileID: 1608180342}
+  - component: {fileID: 1608180343}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -776,7 +749,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608180335}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 1.04, z: -0.7}
+  m_LocalPosition: {x: 0.19, y: 1.04, z: 1.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -815,6 +788,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1608180343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608180335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 671a284f4cd1c4d138e219fe1bafd071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
 --- !u!1 &1757743363
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,18 +926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 7103b0a7605904dd6871f6f952f670d5, type: 2}
-        m_MethodName: UpdateValue
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 10
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1757743370
@@ -966,4 +941,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86fb087f25fbe4a2fa3055c928cc6d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  multiplier: 2.6
+  time: 4
   powerUp: 0
