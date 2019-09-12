@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class PowerUps : MonoBehaviour
+public class PowerUpsHealth : MonoBehaviour
 {
     public float multiplier = 2.6f;
     public float time = 4f;
@@ -32,8 +32,6 @@ public class PowerUps : MonoBehaviour
         yield return new WaitForSeconds(time);
 
         stats.health /= multiplier;
-        
-        Destroy(gameObject);
         
     }
 
