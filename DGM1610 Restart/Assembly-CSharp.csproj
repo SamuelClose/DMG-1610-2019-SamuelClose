@@ -62,8 +62,9 @@
     <Compile Include="Assets\Scripts\DogClass.cs" />
     <Compile Include="Assets\Scripts\Float1.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
+    <Compile Include="Assets\Scripts\GravityStart.cs" />
+    <Compile Include="Assets\Scripts\MagicEffect.cs" />
     <Compile Include="Assets\Scripts\MouseEvents.cs" />
-    <Compile Include="Assets\Scripts\MovementUp.cs" />
     <Compile Include="Assets\Scripts\ParticleControl.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerMagic.cs" />

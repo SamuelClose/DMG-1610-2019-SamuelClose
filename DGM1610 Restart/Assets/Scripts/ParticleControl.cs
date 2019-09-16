@@ -8,7 +8,7 @@ public class ParticleControl : MonoBehaviour
 
     public ParticleSystem particles;
 
-    private void OnMouseDown()
+    private void OnTriggerEnter(Collider other)
     {
         particles.Emit(100);
     }
