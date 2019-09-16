@@ -24,3 +24,5 @@ a multiline comment use a single slash with an *
         multi line comment can be used to disavle code by placing infront and after the code
 
 }
+
+.gitnore
