@@ -8,7 +8,6 @@ using UnityEngine.Serialization;
 
 public class ControllerRigidBody : MonoBehaviour
 {
-
     private Vector3 pos;
     
     public int jumpCount;
@@ -17,7 +16,7 @@ public class ControllerRigidBody : MonoBehaviour
     
     public LayerMask groundLayers;
 
-    public CapsuleCollider capsule;
+    public CapsuleCollider cap;
     
     private string moveInputAxis = "Vertical";
     
@@ -29,24 +28,21 @@ public class ControllerRigidBody : MonoBehaviour
 
     public float jumpSpeed = 10f;
 
-    public float gravity = 9.81f;
+    public float gravity = 9.5f;
     
     
 
     private Rigidbody rb;
 
-    private void Start()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        capsule = GetComponent<CapsuleCollider>();
+        cap = GetComponent<CapsuleCollider>();
     }
 
     void FixedUpdate()
     
     {
-        
-        pos.y -= gravity;
-        
         float moveAxis = Input.GetAxis(moveInputAxis);
         float turnAxis = Input.GetAxis(turnInputAxis);
         
@@ -57,24 +53,23 @@ public class ControllerRigidBody : MonoBehaviour
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space) && jumpCount < jumpCountMax)
         {
             rb.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
-     
             jumpCount++;
         }
+        else
+        {
+            rb.AddForce(Vector3.down * gravity, ForceMode.Acceleration);
+        }
 
-        
     }
 
     private bool IsGrounded()
     {
         jumpCount = 0;
         
-        return Physics.CheckCapsule(capsule.bounds.center,
-            new Vector3(capsule.bounds.center.x, capsule.bounds.min.y, capsule.bounds.center.z), capsule.radius * .9f, groundLayers);
+        return Physics.CheckCapsule(cap.bounds.center,
+            new Vector3(cap.bounds.center.x, cap.bounds.min.y, cap.bounds.center.z), cap.radius * .9f, groundLayers);
         
     }
-
-
-
 
 
     private void ApplyInput(float moveInput, float turnInput)
@@ -96,6 +91,8 @@ public class ControllerRigidBody : MonoBehaviour
     
 
 }
+
+
 
 
 

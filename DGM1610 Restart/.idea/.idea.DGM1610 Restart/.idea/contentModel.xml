@@ -12,6 +12,7 @@
           <e p="DogClass.cs" t="Include" />
           <e p="Float1.cs" t="Include" />
           <e p="FollowPlayer.cs" t="Include" />
+          <e p="Functions.cs" t="Include" />
           <e p="MagicEffect.cs" t="Include" />
           <e p="MouseEvents.cs" t="Include" />
           <e p="ParticleControl.cs" t="Include" />
