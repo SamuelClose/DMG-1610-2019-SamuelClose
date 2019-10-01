@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Float1.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\Functions.cs" />
+    <Compile Include="Assets\Scripts\IntDataObject.cs" />
     <Compile Include="Assets\Scripts\MouseEvents.cs" />
     <Compile Include="Assets\Scripts\ParticleControl.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\Scripts\PowerUpsHealth.cs" />
     <Compile Include="Assets\Scripts\PowerUpsMagicEffect.cs" />
     <Compile Include="Assets\Scripts\TriggerEvents.cs" />
+    <Compile Include="Assets\Scripts\UITextController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/samclose/Desktop/DGM1610-fall-2019/DMG-1610-2019-SamuelClose/DGM1610 Restart/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
