@@ -5,13 +5,19 @@ using UnityEngine;
 
 public class ParticleControl : MonoBehaviour
 {
-    
-    
+
+   
     public ParticleSystem particles;
 
     private void OnTriggerEnter(Collider other)
     {
-        particles.Emit(100);
+        if (other.CompareTag("bomb"))
+        {
+             particles.Emit(100);
+        }
+
+       
+
     }
     
     

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.UIElements.GraphView;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -8,11 +9,9 @@ using UnityEngine.Serialization;
 
 public class ControllerRigidBody : MonoBehaviour
 {
-    private Vector3 pos;
-    
-    public int jumpCount;
+    public float jumpCount;
 
-    public int jumpCountMax = 2;
+    public float jumpCountMax = 2f;
     
     public LayerMask groundLayers;
 
@@ -29,16 +28,18 @@ public class ControllerRigidBody : MonoBehaviour
     public float jumpSpeed = 10f;
 
     public float gravity = 9.5f;
-    
-    
 
     private Rigidbody rb;
+    
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         cap = GetComponent<CapsuleCollider>();
     }
+
+
+   
 
     void FixedUpdate()
     
@@ -49,17 +50,17 @@ public class ControllerRigidBody : MonoBehaviour
 
         ApplyInput(moveAxis, turnAxis);
         
+      
+       
+        rb.AddForce(Vector3.down * gravity, ForceMode.Acceleration);
+        
+        
         
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space) && jumpCount < jumpCountMax)
         {
             rb.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
             jumpCount++;
         }
-        else
-        {
-            rb.AddForce(Vector3.down * gravity, ForceMode.Acceleration);
-        }
-
     }
 
     private bool IsGrounded()
@@ -70,7 +71,6 @@ public class ControllerRigidBody : MonoBehaviour
             new Vector3(cap.bounds.center.x, cap.bounds.min.y, cap.bounds.center.z), cap.radius * .9f, groundLayers);
         
     }
-
 
     private void ApplyInput(float moveInput, float turnInput)
     {
@@ -88,8 +88,6 @@ public class ControllerRigidBody : MonoBehaviour
     {
         transform.Rotate(0, input * rotationRate * Time.deltaTime, 0);
     }
-    
-
 }
 
 

@@ -12,7 +12,7 @@ public class PowerUpsHealth : MonoBehaviour
     public float time = 4f;
     
     public bool powerUp;
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {

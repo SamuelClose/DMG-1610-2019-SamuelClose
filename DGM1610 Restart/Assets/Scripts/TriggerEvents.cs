@@ -15,10 +15,15 @@ public class TriggerEvents : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         triggerEvent.Invoke();
+      
     }
-
-
+    
 }
+
+
+
+
+
 
 
 

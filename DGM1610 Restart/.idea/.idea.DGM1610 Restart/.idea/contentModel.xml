@@ -5,21 +5,23 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="BombEffect.cs" t="Include" />
           <e p="CatClass.cs" t="Include" />
           <e p="ControllerRigidBody.cs" t="Include" />
           <e p="ControllerTransform.cs" t="Include" />
           <e p="DogClass.cs" t="Include" />
+          <e p="Explosion.cs" t="Include" />
           <e p="Float1.cs" t="Include" />
           <e p="FollowPlayer.cs" t="Include" />
           <e p="Functions.cs" t="Include" />
-          <e p="MagicEffect.cs" t="Include" />
           <e p="MouseEvents.cs" t="Include" />
           <e p="ParticleControl.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayerHealth.cs" t="Include" />
           <e p="PlayerMagic.cs" t="Include" />
+          <e p="PowerUpParticles.cs" t="Include" />
+          <e p="PowerUpsBombEffect.cs" t="Include" />
           <e p="PowerUpsHealth.cs" t="Include" />
+          <e p="PowerUpsMagicEffect.cs" t="Include" />
           <e p="TriggerEvents.cs" t="Include" />
         </e>
       </e>
