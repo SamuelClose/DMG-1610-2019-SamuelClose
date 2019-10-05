@@ -6,8 +6,7 @@ using UnityEngine;
 
 public class PowerUpsBombEffect : MonoBehaviour
 {
-    
-    public float damage = 1f;
+    public int damage = 10;
     public float time = 25f;
 
  private void OnTriggerEnter(Collider other)
@@ -19,9 +18,10 @@ public class PowerUpsBombEffect : MonoBehaviour
 
      IEnumerator Pickup (Collider player)
      {
-         PlayerHealth stats = player.GetComponent<PlayerHealth>();
-         stats.health = -damage;
+         PlayerDisplay stats = player.GetComponent<PlayerDisplay>();
+        
          GetComponent<MeshRenderer>().enabled = false;
+         stats.playerHealth = -damage;
          GetComponent<Collider>().enabled = false;
          yield return new WaitForSeconds(time);
 

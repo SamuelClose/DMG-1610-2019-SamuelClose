@@ -8,8 +8,8 @@ using UnityEngine.EventSystems;
 
 public class PowerUpsHealth : MonoBehaviour
 {
-    public float multiplier = 2.6f;
-    public float time = 4f;
+    public int multiplier = 2;
+    public int time = 4;
     
     public bool powerUp;
     private void OnTriggerEnter(Collider other)
@@ -24,14 +24,14 @@ public class PowerUpsHealth : MonoBehaviour
     {
 
         // ReSharper disable once Unity.PerformanceCriticalCodeInvocation
-        PlayerHealth stats = player.GetComponent<PlayerHealth>();
-        stats.health *= multiplier;
+        PlayerDisplay stats = player.GetComponent<PlayerDisplay>();
+        stats.playerHealth *= multiplier;
 
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<Collider>().enabled = false;
         yield return new WaitForSeconds(time);
 
-        stats.health /= multiplier;
+        stats.playerHealth /= multiplier;
         
     }
 

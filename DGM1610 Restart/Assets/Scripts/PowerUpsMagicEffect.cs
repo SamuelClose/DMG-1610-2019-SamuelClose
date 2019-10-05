@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 
 public class PowerUpsMagicEffect : MonoBehaviour
 {
-    [FormerlySerializedAs("multiplier")] public float multiplier = 2f;
+    [FormerlySerializedAs("multiplier")] public int multiplier = 2;
     public float time = 6f;
 
     private void OnTriggerEnter(Collider other)
@@ -20,14 +20,14 @@ public class PowerUpsMagicEffect : MonoBehaviour
 
     private IEnumerator Pickup(Collider player)
     {
-        PlayerMagic stats = player.GetComponent<PlayerMagic>();
-        stats.mana *= multiplier;
+        PlayerDisplay stats = player.GetComponent<PlayerDisplay>();
+        stats.playerMagic *= multiplier;
         
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<Collider>().enabled = false;
         yield return new WaitForSeconds(time);
 
-        stats.mana /= multiplier;
+        stats.playerMagic /= multiplier;
 
     }
 
