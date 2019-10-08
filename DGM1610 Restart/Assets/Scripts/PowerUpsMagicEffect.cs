@@ -7,7 +7,7 @@ using UnityEngine.Serialization;
 public class PowerUpsMagicEffect : MonoBehaviour
 {
     [FormerlySerializedAs("multiplier")] public int multiplier = 2;
-    public float time = 6f;
+    public float time = 4f;
 
     private void OnTriggerEnter(Collider other)
     {

@@ -14,10 +14,13 @@
           <e p="Functions.cs" t="Include" />
           <e p="HealthPack.cs" t="Include" />
           <e p="IntDataObject.cs" t="Include" />
+          <e p="ManaPotion.cs" t="Include" />
           <e p="MouseEvents.cs" t="Include" />
           <e p="ParticleControl.cs" t="Include" />
+          <e p="PlayerControl.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayerDisplay.cs" t="Include" />
+          <e p="PlayerMotor.cs" t="Include" />
           <e p="PowerUpParticles.cs" t="Include" />
           <e p="PowerUpsBombEffect.cs" t="Include" />
           <e p="PowerUpsHealth.cs" t="Include" />

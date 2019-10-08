@@ -23,7 +23,7 @@ public class HealthPack : MonoBehaviour
 
             GetComponent<MeshRenderer>().enabled = false;
             GetComponent<Collider>().enabled = false;
-            yield return (stats.playerHealth);
+            yield return (stats.playerHealth < stats.playerMaxHealth);
         }
     }
 
