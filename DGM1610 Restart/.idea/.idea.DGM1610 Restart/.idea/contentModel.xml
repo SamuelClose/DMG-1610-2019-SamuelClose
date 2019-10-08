@@ -21,6 +21,7 @@
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayerDisplay.cs" t="Include" />
           <e p="PlayerMotor.cs" t="Include" />
+          <e p="PlayerSpawn.cs" t="Include" />
           <e p="PowerUpParticles.cs" t="Include" />
           <e p="PowerUpsBombEffect.cs" t="Include" />
           <e p="PowerUpsHealth.cs" t="Include" />
