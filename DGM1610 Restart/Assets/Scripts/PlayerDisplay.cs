@@ -17,13 +17,7 @@ public class PlayerDisplay : MonoBehaviour
 
     public string playerName;
 
-    //public bool spawnPlayer;
-    
-    
-
-    
-    
-    void Awake()
+    void Start()
     {
       playerHealth = stat.health;
 
@@ -36,10 +30,5 @@ public class PlayerDisplay : MonoBehaviour
       playerName = stat.name;
 
      stat.SpawnPlayer();
-
-
-
-
-
     }
 }
