@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerDisplay1 : MonoBehaviour
+{
+    public Stats stat;
+
+    public float playerHealth;
+
+    public float playerMagic;
+
+    public float playerMaxHealth;
+
+    public float playerDamage;
+
+    public string playerName;
+
+    void Start()
+    {
+        playerHealth = stat.health;
+
+        playerMagic = stat.magic;
+
+        playerMaxHealth = stat.maxHealth;
+
+        playerDamage = stat.damage;
+
+        playerName = stat.name;
+
+   
+    }
+}
+

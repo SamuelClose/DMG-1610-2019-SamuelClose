@@ -20,7 +20,7 @@ public class PowerUpsMagicEffect : MonoBehaviour
 
     private IEnumerator Pickup(Collider player)
     {
-        PlayerDisplay stats = player.GetComponent<PlayerDisplay>();
+        PlayerDisplay1 stats = player.GetComponent<PlayerDisplay1>();
         stats.playerMagic *= multiplier;
         
         GetComponent<MeshRenderer>().enabled = false;

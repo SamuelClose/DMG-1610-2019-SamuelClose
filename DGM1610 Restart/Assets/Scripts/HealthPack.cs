@@ -21,7 +21,7 @@ public class HealthPack : MonoBehaviour
         {
             
             
-            PlayerDisplay stats = player.GetComponent<PlayerDisplay>();
+            PlayerDisplay1 stats = player.GetComponent<PlayerDisplay1>();
             stats.playerHealth += regen;
             GetComponent<MeshRenderer>().enabled = false;
             

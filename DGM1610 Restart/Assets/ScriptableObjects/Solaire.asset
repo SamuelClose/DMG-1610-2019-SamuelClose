@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Solaire
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 03dc738cbd44f4027855d61bcdd31348, type: 3}
-  color: {r: 1, g: 0, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
   prefab: {fileID: 5498303457319131144, guid: 964ab63f79c5b4806b0f8649ea56ac8b, type: 3}
   name: Solaire
   health: 50

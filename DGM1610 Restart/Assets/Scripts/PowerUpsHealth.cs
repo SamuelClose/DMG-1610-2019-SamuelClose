@@ -14,7 +14,7 @@ public class PowerUpsHealth : MonoBehaviour
     }
     IEnumerator Pickup(Collider player)
     { 
-        PlayerDisplay stats = player.GetComponent<PlayerDisplay>();
+        PlayerDisplay1 stats = player.GetComponent<PlayerDisplay1>();
         stats.playerHealth *= multiplier;
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<Collider>().enabled = false;

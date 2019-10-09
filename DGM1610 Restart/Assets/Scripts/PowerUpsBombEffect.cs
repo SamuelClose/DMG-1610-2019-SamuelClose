@@ -1,9 +1,7 @@
-﻿using System;
+﻿
 using System.Collections;
-using System.Collections.Generic;
-using JetBrains.Annotations;
+using System.IO;
 using UnityEngine;
-
 public class PowerUpsBombEffect : MonoBehaviour
 {
     public int damage = 10;
@@ -15,18 +13,13 @@ public class PowerUpsBombEffect : MonoBehaviour
      {
          StartCoroutine(Pickup (other));
      }
-
      IEnumerator Pickup (Collider player)
      {
-         PlayerDisplay stats = player.GetComponent<PlayerDisplay>();
-        
+         PlayerDisplay1 stats = player.GetComponent<PlayerDisplay1>();
          GetComponent<MeshRenderer>().enabled = false;
          stats.playerHealth = -damage;
          GetComponent<Collider>().enabled = false;
-         yield return new WaitForSeconds(time);
-
-        
-
+         yield return new WaitForChangedResult();
      }
  }
 

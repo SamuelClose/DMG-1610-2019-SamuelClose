@@ -18,7 +18,7 @@ public class ManaPotion : MonoBehaviour
 
         IEnumerator Pickup(Collider player)
         {
-            PlayerDisplay stats = player.GetComponent<PlayerDisplay>();
+            PlayerDisplay1 stats = player.GetComponent<PlayerDisplay1>();
             stats.playerMagic += regen;
 
             GetComponent<MeshRenderer>().enabled = false;
