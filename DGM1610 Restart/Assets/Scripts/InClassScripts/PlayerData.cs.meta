@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: a078cef22d5f14d87bde618b1f0e44ea
+guid: 406712a8a6a36444ea14711a50d68cb3
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - sprite: {fileID: 21300000, guid: 1d94f94f93f8547b4b4ba36a7f42fdad, type: 3}
-  - prefab: {fileID: 3840452462963325940, guid: 61971068f379d47f791e07e3c6a18565,
+  - sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  - preFab: {fileID: 8041235539676298812, guid: b5aef403f33f2410db3ffa7f49da4e1d,
       type: 3}
   executionOrder: 0
   icon: {instanceID: 0}

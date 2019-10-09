@@ -2,17 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameArtData : MonoBehaviour
+public class GameArtData : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   public Sprite sprite;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   public Color color;
+
+   public GameObject prefab;
+
 }

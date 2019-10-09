@@ -4,12 +4,8 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 10f;
-
     [SerializeField] private float lookSpeed = 5f;
-
     [SerializeField] private float jumpHeight = 10f;
-    
-        
     private PlayerMotor _movement;
     private void Start()
     {
@@ -17,7 +13,6 @@ public class PlayerControl : MonoBehaviour
     }
     private void Update()
     {
-       
         //Calculate movement velocity as a 3d Vector
         float xMovement = Input.GetAxisRaw("Horizontal");
         float zMovement = Input.GetAxisRaw("Vertical");

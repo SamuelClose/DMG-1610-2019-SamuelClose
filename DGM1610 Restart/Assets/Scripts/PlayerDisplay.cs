@@ -12,24 +12,34 @@ public class PlayerDisplay : MonoBehaviour
     public float playerMagic;
 
     public float playerMaxHealth;
+
+    public float playerDamage;
+
+    public string playerName;
+
+    //public bool spawnPlayer;
     
     
 
     
     
-    void Start()
+    void Awake()
     {
       playerHealth = stat.health;
 
       playerMagic = stat.magic;
 
       playerMaxHealth = stat.maxHealth;
-      
-      
-    }
 
-    public void FixedUpdate()
-    {
-       
+      playerDamage = stat.damage;
+
+      playerName = stat.name;
+
+     stat.SpawnPlayer();
+
+
+
+
+
     }
 }

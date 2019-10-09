@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : GameArtData
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
+    public void SpawnPlayer()
+         {
+             var newPlayer = Instantiate(prefab);
+             var newSprite = newPlayer.GetComponentInChildren<SpriteRenderer>();
+             newSprite.sprite = sprite;
+             newSprite.color = color;
+         }
+    
+    
+    
+    
 }

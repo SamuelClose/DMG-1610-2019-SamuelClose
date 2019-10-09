@@ -57,20 +57,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\CatClass.cs" />
     <Compile Include="Assets\Scripts\ControllerRigidBody.cs" />
     <Compile Include="Assets\Scripts\ControllerTransform.cs" />
-    <Compile Include="Assets\Scripts\DogClass.cs" />
     <Compile Include="Assets\Scripts\Explosion.cs" />
-    <Compile Include="Assets\Scripts\FollowPlayer.cs" />
-    <Compile Include="Assets\Scripts\Functions.cs" />
+    <Compile Include="Assets\Scripts\GameArtData.cs" />
     <Compile Include="Assets\Scripts\HealthPack.cs" />
-    <Compile Include="Assets\Scripts\IntDataObject.cs" />
+    <Compile Include="Assets\Scripts\InClassScripts\CatClass.cs" />
+    <Compile Include="Assets\Scripts\InClassScripts\DogClass.cs" />
+    <Compile Include="Assets\Scripts\InClassScripts\FollowPlayer.cs" />
+    <Compile Include="Assets\Scripts\InClassScripts\Functions.cs" />
+    <Compile Include="Assets\Scripts\InClassScripts\IntDataObject.cs" />
+    <Compile Include="Assets\Scripts\InClassScripts\PlayerData.cs" />
     <Compile Include="Assets\Scripts\ManaPotion.cs" />
     <Compile Include="Assets\Scripts\MouseEvents.cs" />
     <Compile Include="Assets\Scripts\ParticleControl.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PlayerDisplay.cs" />
     <Compile Include="Assets\Scripts\PlayerMotor.cs" />
     <Compile Include="Assets\Scripts\PlayerSpawn.cs" />

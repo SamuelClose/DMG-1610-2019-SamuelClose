@@ -25,7 +25,6 @@ public class PlayerMotor : MonoBehaviour
    }
    private void Start()
    {
-      
       rB = GetComponent<Rigidbody>();
    }
    public void Move(Vector3 velocity1) 
@@ -62,7 +61,6 @@ public class PlayerMotor : MonoBehaviour
       if (IsGrounded() && Input.GetKey(KeyCode.Space) && jumpCount < jumpMax)
       {
          rB.AddForce((float) ForceMode.Impulse * _jump * Vector3.up);
-         
          jumpCount ++;
       }
       else
