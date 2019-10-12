@@ -25,8 +25,6 @@ public class PlayerDisplay : MonoBehaviour
 
       playerMaxHealth = stat.maxHealth;
 
-      playerDamage = stat.damage;
-
       playerName = stat.name;
 
      stat.SpawnPlayer();

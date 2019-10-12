@@ -213,7 +213,7 @@ MonoBehaviour:
   moveSpeed: 10
   gravity: 10
   jumpSpeed: 25
-  jumpHeight: 150
+  jumpHeight: 75
   jumpCount: 0
   jumpCountMax: 2
 --- !u!114 &8552858731891781776
@@ -232,5 +232,7 @@ MonoBehaviour:
   playerHealth: 0
   playerMagic: 0
   playerMaxHealth: 0
-  playerDamage: 0
   playerName: 
+  weapon: {fileID: 0}
+  shirt: {fileID: 0}
+  pants: {fileID: 0}
