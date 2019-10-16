@@ -80,10 +80,13 @@
     <Compile Include="Assets\Scripts\ParticleControl.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\PlayerDisplay.cs" />
+    <Compile Include="Assets\Scripts\PlayerMotor.cs" />
+    <Compile Include="Assets\Scripts\PLayerRigidBodyController.cs" />
+    <Compile Include="Assets\Scripts\PlayerRigidBodyMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\Controller01.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerDisplay1.cs" />
-    <Compile Include="Assets\Scripts\PlayerScripts\PlayerMotor.cs" />
     <Compile Include="Assets\Scripts\TriggerEvents.cs" />
     <Compile Include="Assets\Scripts\UITextController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

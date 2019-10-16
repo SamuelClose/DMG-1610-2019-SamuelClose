@@ -92,8 +92,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5498303457319131189}
   - component: {fileID: 550565406}
-  - component: {fileID: 550565407}
   - component: {fileID: 550565408}
+  - component: {fileID: 550565407}
   - component: {fileID: 550565405}
   - component: {fileID: 8552858731891781776}
   m_Layer: 0
@@ -166,6 +166,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!136 &550565408
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5498303457319131144}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3
+  m_Height: 0.7813568
+  m_Direction: 1
+  m_Center: {x: 0.120000005, y: -0.059321582, z: 0}
 --- !u!143 &550565407
 CharacterController:
   m_ObjectHideFlags: 0
@@ -184,20 +198,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0.12, y: 0, z: 0}
---- !u!136 &550565408
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5498303457319131144}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.3
-  m_Height: 0.9
-  m_Direction: 1
-  m_Center: {x: 0.12, y: 0, z: 0}
 --- !u!114 &550565405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,7 +215,7 @@ MonoBehaviour:
   jumpSpeed: 25
   jumpHeight: 75
   jumpCount: 0
-  jumpCountMax: 2
+  jumpCountMax: 1
 --- !u!114 &8552858731891781776
 MonoBehaviour:
   m_ObjectHideFlags: 0

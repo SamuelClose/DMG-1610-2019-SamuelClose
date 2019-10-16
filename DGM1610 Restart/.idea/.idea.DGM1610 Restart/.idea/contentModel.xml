@@ -20,7 +20,6 @@
             <e p="ClothesData.cs" t="Include" />
             <e p="GameArtData.cs" t="Include" />
             <e p="PlayerData.cs" t="Include" />
-            <e p="PlayerDisplay1.cs" t="Include" />
             <e p="Stats.cs" t="Include" />
             <e p="WeaponData.cs" t="Include" />
           </e>
@@ -34,11 +33,15 @@
           <e p="MouseEvents.cs" t="Include" />
           <e p="ParticleControl.cs" t="Include" />
           <e p="PlayerControl.cs" t="Include" />
+          <e p="PlayerDisplay.cs" t="Include" />
+          <e p="PlayerMotor.cs" t="Include" />
+          <e p="PLayerRigidBodyController.cs" t="Include" />
+          <e p="PlayerRigidBodyMovement.cs" t="Include" />
           <e p="PlayerScripts" t="Include">
+            <e p="Controller01.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="PlayerData.cs" t="Include" />
-            <e p="PlayerDisplay.cs" t="Include" />
-            <e p="PlayerMotor.cs" t="Include" />
+            <e p="PlayerDisplay1.cs" t="Include" />
           </e>
           <e p="TriggerEvents.cs" t="Include" />
           <e p="UITextController.cs" t="Include" />
