@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class CharcterController : MonoBehaviour
 {
+    public float rollSpeed;
     public float moveSpeed;
-    public float jumpHeight;
     private Rigidbody2D _rb;
     private Vector2 moveX;
     void Start()
+   
     {
         _rb = GetComponent<Rigidbody2D>();
     }
