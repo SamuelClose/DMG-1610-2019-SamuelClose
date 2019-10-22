@@ -211,9 +211,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  gravity: 10
-  jumpSpeed: 25
-  jumpHeight: 75
+  gravity: 1.4
+  jumpHeight: 20
   jumpCount: 0
   jumpCountMax: 1
 --- !u!114 &8552858731891781776
