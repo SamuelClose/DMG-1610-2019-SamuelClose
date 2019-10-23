@@ -33,6 +33,6 @@ public class PlayerController : MonoBehaviour
                 position.y -= jumpHeight;
             }
         }
-        controller.Move(position * Time.fixedDeltaTime);
+        controller.Move(position * Time.deltaTime);
     }
 }
