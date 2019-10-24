@@ -135,7 +135,6 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="CollectionData.cs" t="Include" />
           <e p="ConsumableScripts" t="Include">
             <e p="Explosion.cs" t="Include" />
             <e p="HealthPack.cs" t="Include" />
@@ -149,6 +148,7 @@
           <e p="ControllerTransform.cs" t="Include" />
           <e p="DataScripts" t="Include">
             <e p="ClothesData.cs" t="Include" />
+            <e p="CollectionData.cs" t="Include" />
             <e p="GameArtData.cs" t="Include" />
             <e p="PlayerData.cs" t="Include" />
             <e p="Stats.cs" t="Include" />
@@ -176,6 +176,7 @@
           </e>
           <e p="TriggerEvents.cs" t="Include" />
           <e p="UITextController.cs" t="Include" />
+          <e p="WeaponStatsDisplay.cs" t="Include" />
         </e>
       </e>
       <e p="DGM1610 Restart.sln" t="IncludeFlat" />

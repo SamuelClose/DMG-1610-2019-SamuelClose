@@ -110,7 +110,6 @@
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineMixer.cs" />
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineShot.cs" />
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineTrack.cs" />
-    <Compile Include="Assets\Scripts\CollectionData.cs" />
     <Compile Include="Assets\Scripts\ConsumableScripts\Explosion.cs" />
     <Compile Include="Assets\Scripts\ConsumableScripts\HealthPack.cs" />
     <Compile Include="Assets\Scripts\ConsumableScripts\ManaPotion.cs" />
@@ -121,6 +120,7 @@
     <Compile Include="Assets\Scripts\ControllerRigidBody.cs" />
     <Compile Include="Assets\Scripts\ControllerTransform.cs" />
     <Compile Include="Assets\Scripts\DataScripts\ClothesData.cs" />
+    <Compile Include="Assets\Scripts\DataScripts\CollectionData.cs" />
     <Compile Include="Assets\Scripts\DataScripts\GameArtData.cs" />
     <Compile Include="Assets\Scripts\DataScripts\PlayerData.cs" />
     <Compile Include="Assets\Scripts\DataScripts\Stats.cs" />
@@ -143,6 +143,7 @@
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerDisplay1.cs" />
     <Compile Include="Assets\Scripts\TriggerEvents.cs" />
     <Compile Include="Assets\Scripts\UITextController.cs" />
+    <Compile Include="Assets\Scripts\WeaponStatsDisplay.cs" />
     <None Include="Assets\Cinemachine\ReleaseNotes.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/samclose/Desktop/DGM1610-fall-2019/DMG-1610-2019-SamuelClose/DGM1610 Restart/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

@@ -11,6 +11,7 @@ public class Stats : GameArtData
     public WeaponData weapons;
     public ClothesData shirt;
     public ClothesData pants;
+    public CollectionData playerInventory;
     
     
     

@@ -4,8 +4,20 @@ using UnityEngine;
 [CreateAssetMenu]
 public class WeaponData : GameArtData
 {
-    public float damage;
+    public int damage;
 
-    public string rarity;
-    
+    public float maxRange;
+
+    public string rarityScore;
+
+    public string typeOf;
+
+    public void SpawnItem()
+    {
+        var newWeapon = Instantiate(prefab);
+        var newSprite = newWeapon.GetComponentInChildren<SpriteRenderer>();
+        newSprite.sprite = sprite;
+        newSprite.color = color;
+    }
+
 }

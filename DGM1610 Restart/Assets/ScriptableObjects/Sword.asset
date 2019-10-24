@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18721ef8f360c46f68f5f02e128c8581, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 1d94f94f93f8547b4b4ba36a7f42fdad, type: 3}
+  sprite: {fileID: 21300000, guid: 8e851e51e3a01400bb5d20a206c555bc, type: 3}
   color: {r: 0.6415094, g: 0.027233878, b: 0.027233878, a: 1}
-  prefab: {fileID: 0}
-  damage: 4
-  rarity: Common
+  prefab: {fileID: 5225532983867663263, guid: 959e40bc1266f4efc8b3d2918512feef, type: 3}
+  damage: 1
+  maxRange: 4
+  rarityScore: common
+  typeOf: Sword-One-handed
