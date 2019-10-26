@@ -12,12 +12,5 @@ public class WeaponData : GameArtData
 
     public string typeOf;
 
-    public void SpawnItem()
-    {
-        var newWeapon = Instantiate(prefab);
-        var newSprite = newWeapon.GetComponentInChildren<SpriteRenderer>();
-        newSprite.sprite = sprite;
-        newSprite.color = color;
-    }
 
 }

@@ -141,6 +141,7 @@
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerDisplay1.cs" />
+    <Compile Include="Assets\Scripts\Problem.cs" />
     <Compile Include="Assets\Scripts\TriggerEvents.cs" />
     <Compile Include="Assets\Scripts\UITextController.cs" />
     <Compile Include="Assets\Scripts\WeaponStatsDisplay.cs" />

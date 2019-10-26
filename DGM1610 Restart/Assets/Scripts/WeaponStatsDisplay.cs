@@ -12,6 +12,5 @@ public class WeaponStatsDisplay : MonoBehaviour
         weaponDamage = stats.damage;
         type = stats.typeOf;
         rarity = stats.rarityScore;
-        stats.SpawnItem();
     }
 }
