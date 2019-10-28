@@ -21,6 +21,8 @@ public class PlayerDisplay1 : MonoBehaviour
     
     public ClothesData pants;
 
+    public List<GameArtData> inventory;
+
     void Start()
     {
         playerHealth = stat.health;
@@ -37,7 +39,7 @@ public class PlayerDisplay1 : MonoBehaviour
 
         pants = stat.pants;
 
-
+        inventory = stat.playerInventory;
 
 
     }

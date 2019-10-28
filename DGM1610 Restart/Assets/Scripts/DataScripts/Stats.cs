@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 using UnityEngine;
 [CreateAssetMenu(fileName = "New Stats", menuName = "Stat")]
@@ -11,11 +12,14 @@ public class Stats : GameArtData
     public WeaponData weapons;
     public ClothesData shirt;
     public ClothesData pants;
-    public CollectionData playerInventory;
-    
-    
-    
-    
+    public List<GameArtData> playerInventory;
+
+
+    private void Awake()
+    {
+        playerInventory = new List<GameArtData>(4);
+    }
+
     public void SpawnPlayer()
              {
                  var newPlayer = Instantiate(prefab);

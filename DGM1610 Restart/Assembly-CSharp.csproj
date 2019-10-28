@@ -117,6 +117,7 @@
     <Compile Include="Assets\Scripts\ConsumableScripts\PowerUpsBombEffect.cs" />
     <Compile Include="Assets\Scripts\ConsumableScripts\PowerUpsHealth.cs" />
     <Compile Include="Assets\Scripts\ConsumableScripts\PowerUpsMagicEffect.cs" />
+    <Compile Include="Assets\Scripts\ConsumableScripts\WeaponPickup.cs" />
     <Compile Include="Assets\Scripts\ControllerRigidBody.cs" />
     <Compile Include="Assets\Scripts\ControllerTransform.cs" />
     <Compile Include="Assets\Scripts\DataScripts\ClothesData.cs" />

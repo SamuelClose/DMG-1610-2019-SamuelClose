@@ -143,6 +143,7 @@
             <e p="PowerUpsBombEffect.cs" t="Include" />
             <e p="PowerUpsHealth.cs" t="Include" />
             <e p="PowerUpsMagicEffect.cs" t="Include" />
+            <e p="WeaponPickup.cs" t="Include" />
           </e>
           <e p="ControllerRigidBody.cs" t="Include" />
           <e p="ControllerTransform.cs" t="Include" />

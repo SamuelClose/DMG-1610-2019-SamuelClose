@@ -6,5 +6,5 @@ using UnityEngine;
 [CreateAssetMenu]
 public class CollectionData : ScriptableObject
 {
-   public List<GameObject> inventory;
+   public List<GameObject> collectionList;
 }
