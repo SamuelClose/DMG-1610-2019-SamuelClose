@@ -24,7 +24,6 @@ public class HealthPack : MonoBehaviour
             PlayerDisplay1 stats = player.GetComponent<PlayerDisplay1>();
             stats.playerHealth += regen;
             GetComponent<MeshRenderer>().enabled = false;
-            
             GetComponent<Collider>().enabled = false;
             yield return (stats.playerHealth < stats.playerMaxHealth);
         }

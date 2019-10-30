@@ -16,8 +16,6 @@ public class Problem : MonoBehaviour
             }
         }
     }
-
-
 }
 
 

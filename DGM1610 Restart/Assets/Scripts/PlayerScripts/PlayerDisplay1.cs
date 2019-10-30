@@ -40,8 +40,6 @@ public class PlayerDisplay1 : MonoBehaviour
         pants = stat.pants;
 
         inventory = stat.playerInventory;
-
-
     }
 }
 
