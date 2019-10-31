@@ -13,13 +13,10 @@ public class Stats : GameArtData
     public ClothesData shirt;
     public ClothesData pants;
     public List<GameArtData> playerInventory;
-
-
     private void Awake()
     {
-        playerInventory = new List<GameArtData>(4);
+        playerInventory = new List<GameArtData>(5);
     }
-
     public void SpawnPlayer()
              {
                  var newPlayer = Instantiate(prefab);
@@ -27,6 +24,4 @@ public class Stats : GameArtData
                  newSprite.sprite = sprite;
                  newSprite.color = color;
              }
-
-
 }

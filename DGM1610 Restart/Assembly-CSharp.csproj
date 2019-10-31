@@ -110,6 +110,7 @@
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineMixer.cs" />
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineShot.cs" />
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineTrack.cs" />
+    <Compile Include="Assets\Free Asset - 2D Handcrafted Art\Scripts\CamerController.cs" />
     <Compile Include="Assets\Scripts\ConsumableScripts\Explosion.cs" />
     <Compile Include="Assets\Scripts\ConsumableScripts\HealthPack.cs" />
     <Compile Include="Assets\Scripts\ConsumableScripts\ManaPotion.cs" />
@@ -118,8 +119,7 @@
     <Compile Include="Assets\Scripts\ConsumableScripts\PowerUpsHealth.cs" />
     <Compile Include="Assets\Scripts\ConsumableScripts\PowerUpsMagicEffect.cs" />
     <Compile Include="Assets\Scripts\ConsumableScripts\WeaponPickup.cs" />
-    <Compile Include="Assets\Scripts\ControllerRigidBody.cs" />
-    <Compile Include="Assets\Scripts\ControllerTransform.cs" />
+    <Compile Include="Assets\Scripts\ConsumableScripts\WeaponStatsDisplay.cs" />
     <Compile Include="Assets\Scripts\DataScripts\ClothesData.cs" />
     <Compile Include="Assets\Scripts\DataScripts\CollectionData.cs" />
     <Compile Include="Assets\Scripts\DataScripts\GameArtData.cs" />
@@ -131,22 +131,27 @@
     <Compile Include="Assets\Scripts\InClassScripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\InClassScripts\Functions.cs" />
     <Compile Include="Assets\Scripts\InClassScripts\IntDataObject.cs" />
-    <Compile Include="Assets\Scripts\MouseEvents.cs" />
+    <Compile Include="Assets\Scripts\InClassScripts\MouseEvents.cs" />
+    <Compile Include="Assets\Scripts\InClassScripts\Problem.cs" />
+    <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\ParticleControl.cs" />
-    <Compile Include="Assets\Scripts\PlayerControl.cs" />
-    <Compile Include="Assets\Scripts\PlayerDisplay.cs" />
-    <Compile Include="Assets\Scripts\PlayerMotor.cs" />
-    <Compile Include="Assets\Scripts\PLayerRigidBodyController.cs" />
-    <Compile Include="Assets\Scripts\PlayerRigidBodyMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\Controller01.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\ControllerRigidBody.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\ControllerTransform.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerData.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\PlayerDisplay.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerDisplay1.cs" />
-    <Compile Include="Assets\Scripts\Problem.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\PlayerMotor.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\PLayerRigidBodyController.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\PlayerRigidBodyMovement.cs" />
     <Compile Include="Assets\Scripts\TriggerEvents.cs" />
     <Compile Include="Assets\Scripts\UITextController.cs" />
-    <Compile Include="Assets\Scripts\WeaponStatsDisplay.cs" />
+    <None Include="Assets\Free Asset - 2D Handcrafted Art\Shader\NormalMappedTileAnimated.shader" />
+    <None Include="Assets\Free Asset - 2D Handcrafted Art\Shader\NormalMappedSprite-Animated.shader" />
     <None Include="Assets\Cinemachine\ReleaseNotes.txt" />
+    <None Include="Assets\Free Asset - 2D Handcrafted Art\Readme.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/samclose/Desktop/DGM1610-fall-2019/DMG-1610-2019-SamuelClose/DGM1610 Restart/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

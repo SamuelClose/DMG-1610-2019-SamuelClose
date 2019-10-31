@@ -22,7 +22,7 @@ TagManager:
   - Player
   - Ground
   - PowerUps
-  - 
+  - Background
   - 
   - 
   - 
@@ -45,4 +45,37 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: 1
+    uniqueID: 2086818963
+    locked: 0
+  - name: 2
+    uniqueID: 2677141979
+    locked: 0
+  - name: 3
+    uniqueID: 943672299
+    locked: 0
+  - name: 4
+    uniqueID: 2414913133
+    locked: 0
+  - name: 5
+    uniqueID: 45270605
+    locked: 0
+  - name: 6
+    uniqueID: 2787757751
+    locked: 0
+  - name: 7
+    uniqueID: 3147062605
+    locked: 0
+  - name: 8
+    uniqueID: 2579327637
+    locked: 0
+  - name: 9
+    uniqueID: 1036277179
+    locked: 0
+  - name: 10
+    uniqueID: 2521772559
+    locked: 0
+  - name: Platforms
+    uniqueID: 1394380431
     locked: 0

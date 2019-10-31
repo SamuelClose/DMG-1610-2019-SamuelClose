@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 public class WeaponPickup : MonoBehaviour
 {
     public PlayerDisplay1 stat;
-
+    public List<GameArtData> weapons;
+ 
     private void Start()
     {
-       
+        weapons = stat.inventory;
     }
-    
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -17,21 +18,21 @@ public class WeaponPickup : MonoBehaviour
              StartCoroutine(routine:Pickup(other));
         } 
     }
-    IEnumerator Pickup(Collider player)
+    IEnumerator Pickup(Collider other)
     {
-        GetComponent<BoxCollider>().enabled = false;
-        GetComponent<SpriteRenderer>().enabled = false;
-        
-        void AddData(GameArtData obj)
+        void AddItem(GameArtData obj)
         {
-            for (int i = 0; i < stat.inventory.Count; i++)
+            for (int i = 0; i < weapons.Count; i++)
             {
-                if (stat.inventory.Contains(obj))
+                if (weapons.Contains(obj))
                 {
-                    stat.inventory.Add(obj);
+                    weapons.Add(obj);
                 }
             }
         }
-        yield return player;
+        
+        GetComponent<BoxCollider>().enabled = false;
+        GetComponent<SpriteRenderer>().enabled = false;
+        yield return other ;
     }
 }
