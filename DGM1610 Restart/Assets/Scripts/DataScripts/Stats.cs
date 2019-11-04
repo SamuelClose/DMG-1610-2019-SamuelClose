@@ -12,10 +12,10 @@ public class Stats : GameArtData
     public WeaponData weapons;
     public ClothesData shirt;
     public ClothesData pants;
-    public List<GameArtData> playerInventory;
+    public CollectionData playerInventory;
     public void Awake()
     {
-        playerInventory = new List<GameArtData>(5);
+        
     }
     public void SpawnPlayer()
              {

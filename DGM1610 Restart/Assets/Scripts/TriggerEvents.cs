@@ -10,14 +10,25 @@ public class TriggerEvents : MonoBehaviour
 {
 
    
-    public UnityEvent triggerEvent;
+    public UnityEvent triggerEventEnter;
+    public UnityEvent triggerEventStay;
+    public UnityEvent triggerEventExit;
 
     public void OnTriggerEnter(Collider other)
     {
-        triggerEvent.Invoke();
+        triggerEventEnter.Invoke();
       
     }
-    
+
+    public void OnTriggerStay(Collider other)
+    {
+        triggerEventStay.Invoke();
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        triggerEventExit.Invoke();
+    }
 }
 
 

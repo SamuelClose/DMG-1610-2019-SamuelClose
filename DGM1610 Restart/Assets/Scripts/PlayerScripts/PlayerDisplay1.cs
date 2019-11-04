@@ -13,7 +13,8 @@ public class PlayerDisplay1 : MonoBehaviour
     public WeaponData weapon;
     public ClothesData shirt;
     public ClothesData pants;
-    public List<GameArtData> inventory;
+    public CollectionData inventory;
+
     public void Awake()
     {
         playerHealth = stat.health;
@@ -23,7 +24,6 @@ public class PlayerDisplay1 : MonoBehaviour
         weapon = stat.weapons;
         shirt = stat.shirt;
         pants = stat.pants;
-        inventory = new List<GameArtData>(capacity:5);
+        inventory = stat.playerInventory;
     }
 }
-

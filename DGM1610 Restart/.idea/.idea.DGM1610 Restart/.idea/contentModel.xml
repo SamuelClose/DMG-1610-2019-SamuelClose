@@ -192,6 +192,7 @@
           <e p="TriggerEvents.cs" t="Include" />
           <e p="UITextController.cs" t="Include" />
         </e>
+        <e p="TextReciver.cs" t="Include" />
       </e>
       <e p="DGM1610 Restart.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
