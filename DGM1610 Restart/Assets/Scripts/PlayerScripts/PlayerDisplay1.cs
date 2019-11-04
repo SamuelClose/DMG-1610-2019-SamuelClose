@@ -14,7 +14,7 @@ public class PlayerDisplay1 : MonoBehaviour
     public ClothesData shirt;
     public ClothesData pants;
     public List<GameArtData> inventory;
-    void Start()
+    public void Awake()
     {
         playerHealth = stat.health;
         playerMagic = stat.magic;
@@ -23,7 +23,9 @@ public class PlayerDisplay1 : MonoBehaviour
         weapon = stat.weapons;
         shirt = stat.shirt;
         pants = stat.pants;
-        inventory = stat.playerInventory;
+        inventory = new List<GameArtData>(capacity:5);
+
+
     }
 }
 

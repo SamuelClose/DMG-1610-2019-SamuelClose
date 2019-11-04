@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a078cef22d5f14d87bde618b1f0e44ea, type: 3}
   m_Name: Solaire
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 03dc738cbd44f4027855d61bcdd31348, type: 3}
+  sprite: {fileID: 0}
   color: {r: 1, g: 1, b: 1, a: 1}
   prefab: {fileID: 6485245362781434355, guid: 964ab63f79c5b4806b0f8649ea56ac8b, type: 3}
   name: Solaire
@@ -22,4 +22,4 @@ MonoBehaviour:
   weapons: {fileID: 11400000, guid: e76f6387e23ed4081a31b83acfb9108a, type: 2}
   shirt: {fileID: 11400000, guid: ab5d14960dff14a1bbf08ee7540c7236, type: 2}
   pants: {fileID: 11400000, guid: 2dfdb0fe827c6498e9ceac847ed30efb, type: 2}
-  playerInventory: {fileID: 11400000, guid: fdf5d63379d2449faac7b55f972c93ca, type: 2}
+  playerInventory: []

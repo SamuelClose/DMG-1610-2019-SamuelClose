@@ -25,11 +25,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016076000286803074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -9.86, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6485245362781434318}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7664841504779417275
 SpriteRenderer:
@@ -110,9 +110,9 @@ Transform:
   m_LocalPosition: {x: 9.779, y: 0.376, z: -0.01}
   m_LocalScale: {x: 0.599695, y: 0.599695, z: 0.599695}
   m_Children:
-  - {fileID: 6485245363335369005}
   - {fileID: 8546607610453887846}
   - {fileID: 4530302186270285649}
+  - {fileID: 6485245363335369005}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -185,6 +185,7 @@ MonoBehaviour:
   weapon: {fileID: 0}
   shirt: {fileID: 0}
   pants: {fileID: 0}
+  inventory: []
 --- !u!1 &6485245363335369040
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,11 +213,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6485245363335369040}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10.005085}
+  m_LocalPosition: {x: 17.677317, y: 0.040020373, z: -6.7534323}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6485245362781434318}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &6485245363335369006
 Camera:
@@ -328,7 +329,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6485245362781434318}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8546607610453887129
 MonoBehaviour:

@@ -13,7 +13,7 @@ public class Stats : GameArtData
     public ClothesData shirt;
     public ClothesData pants;
     public List<GameArtData> playerInventory;
-    private void Awake()
+    public void Awake()
     {
         playerInventory = new List<GameArtData>(5);
     }
@@ -23,5 +23,5 @@ public class Stats : GameArtData
                  var newSprite = newPlayer.GetComponentInChildren<SpriteRenderer>();
                  newSprite.sprite = sprite;
                  newSprite.color = color;
-             }
+             } 
 }

@@ -175,6 +175,7 @@
           </e>
           <e p="Interactable.cs" t="Include" />
           <e p="ParticleControl.cs" t="Include" />
+          <e p="Pickup.cs" t="Include" />
           <e p="PlayerScripts" t="Include">
             <e p="Controller01.cs" t="Include" />
             <e p="ControllerRigidBody.cs" t="Include" />

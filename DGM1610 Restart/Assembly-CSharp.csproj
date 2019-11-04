@@ -135,6 +135,7 @@
     <Compile Include="Assets\Scripts\InClassScripts\Problem.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\ParticleControl.cs" />
+    <Compile Include="Assets\Scripts\Pickup.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\Controller01.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\ControllerRigidBody.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\ControllerTransform.cs" />

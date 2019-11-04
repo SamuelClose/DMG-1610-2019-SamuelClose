@@ -4,13 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class WeaponPickup : MonoBehaviour
 {
-    public PlayerDisplay1 stat;
-    public List<GameArtData> weapons;
- 
-    private void Start()
-    {
-        weapons = stat.inventory;
-    }
+    public List<GameArtData> collectionList;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -20,19 +14,25 @@ public class WeaponPickup : MonoBehaviour
     }
     IEnumerator Pickup(Collider other)
     {
-        void AddItem(GameArtData obj)
-        {
-            for (int i = 0; i < weapons.Count; i++)
-            {
-                if (weapons.Contains(obj))
-                {
-                    weapons.Add(obj);
-                }
-            }
-        }
         
         GetComponent<BoxCollider>().enabled = false;
         GetComponent<SpriteRenderer>().enabled = false;
+      
         yield return other ;
+        AddData(null);
     }
+
+   
+
+    private void AddData(GameArtData obj)
+    {
+        for (int i = 0; i < collectionList.Count; i++)
+        {
+            if (collectionList.Contains(obj))
+            {
+                collectionList.Remove(obj);
+            }
+        }
+    }
+    
 }
