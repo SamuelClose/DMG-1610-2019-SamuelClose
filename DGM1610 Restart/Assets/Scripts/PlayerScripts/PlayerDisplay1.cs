@@ -24,8 +24,6 @@ public class PlayerDisplay1 : MonoBehaviour
         shirt = stat.shirt;
         pants = stat.pants;
         inventory = new List<GameArtData>(capacity:5);
-
-
     }
 }
 
