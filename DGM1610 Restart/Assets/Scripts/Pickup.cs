@@ -1,27 +1,14 @@
-﻿
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Timers;
-using UnityEngine;
-using UnityEngine.Events;
-
+﻿using UnityEngine;
 public class Pickup : MonoBehaviour
 {
     public CollectionData inventory;
     private void Start()
     {
         inventory = GetComponent<CollectionData>();
-        
-    }
-    
-
-    public void Update()
+    } 
+    private void OnTriggerExit(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            inventory.collectionList.Add(null);
-        }
+        inventory.collectionList.Add(null);
     }
 }
        

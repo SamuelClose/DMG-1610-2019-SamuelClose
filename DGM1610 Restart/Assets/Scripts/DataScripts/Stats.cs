@@ -13,15 +13,12 @@ public class Stats : GameArtData
     public ClothesData shirt;
     public ClothesData pants;
     public CollectionData playerInventory;
-    public void Awake()
-    {
-        
-    }
     public void SpawnPlayer()
              {
                  var newPlayer = Instantiate(prefab);
                  var newSprite = newPlayer.GetComponentInChildren<SpriteRenderer>();
                  newSprite.sprite = sprite;
                  newSprite.color = color;
+                 
              } 
 }

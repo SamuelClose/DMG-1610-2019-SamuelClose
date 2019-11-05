@@ -22,4 +22,4 @@ MonoBehaviour:
   weapons: {fileID: 11400000, guid: e76f6387e23ed4081a31b83acfb9108a, type: 2}
   shirt: {fileID: 11400000, guid: ab5d14960dff14a1bbf08ee7540c7236, type: 2}
   pants: {fileID: 11400000, guid: 2dfdb0fe827c6498e9ceac847ed30efb, type: 2}
-  playerInventory: []
+  playerInventory: {fileID: 11400000, guid: fdf5d63379d2449faac7b55f972c93ca, type: 2}

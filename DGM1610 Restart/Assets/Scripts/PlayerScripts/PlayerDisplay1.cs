@@ -25,5 +25,6 @@ public class PlayerDisplay1 : MonoBehaviour
         shirt = stat.shirt;
         pants = stat.pants;
         inventory = stat.playerInventory;
+        stat.SpawnPlayer();
     }
 }
