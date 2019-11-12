@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu]
-public class WeaponData : GameArtData
+[CreateAssetMenu(fileName = "New Weapon", menuName = "Weapon/Item")]
+public class WeaponData : Item
 {
     public int damage;
 

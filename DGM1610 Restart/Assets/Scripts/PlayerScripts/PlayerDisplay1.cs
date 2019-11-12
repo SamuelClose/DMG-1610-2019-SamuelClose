@@ -13,7 +13,7 @@ public class PlayerDisplay1 : MonoBehaviour
     public WeaponData weapon;
     public ClothesData shirt;
     public ClothesData pants;
-    public CollectionData inventory;
+    
 
     public void Awake()
     {
@@ -24,7 +24,5 @@ public class PlayerDisplay1 : MonoBehaviour
         weapon = stat.weapons;
         shirt = stat.shirt;
         pants = stat.pants;
-        inventory = stat.playerInventory;
-        stat.SpawnPlayer();
     }
 }

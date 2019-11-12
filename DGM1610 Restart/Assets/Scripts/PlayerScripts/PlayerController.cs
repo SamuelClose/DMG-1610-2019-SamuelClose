@@ -6,10 +6,11 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     public float moveSpeed, gravity, jumpHeight;
     public int jumpCount;
-    public int jumpCountMax ;
+    public int jumpCountMax;
     void Start()
     {
         controller = GetComponent<CharacterController>();
+       
     }
     void Update()
     {
@@ -36,18 +37,20 @@ public class PlayerController : MonoBehaviour
         controller.Move(position * Time.deltaTime);
         
         
-        if (Input.GetKeyDown(KeyCode.I)) 
+        if (Input.GetKeyDown(KeyCode.I))
         {
             Debug.Log("Inventory open");
         }
 
         if (Input.GetKey(KeyCode.I))
         {
+            
             Debug.Log("Inspecting Inventory");
         }
 
         if (Input.GetKeyUp(KeyCode.I))
         {
+            
             Debug.Log("Inventory Closed");
         }
     }

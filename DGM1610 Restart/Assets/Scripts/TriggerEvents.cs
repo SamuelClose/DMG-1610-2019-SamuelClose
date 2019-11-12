@@ -1,15 +1,8 @@
-﻿
-
-using System;
+﻿using System;
 using UnityEngine;
 using UnityEngine.Events;
-
-
-
 public class TriggerEvents : MonoBehaviour
 {
-
-   
     public UnityEvent triggerEventEnter;
     public UnityEvent triggerEventStay;
     public UnityEvent triggerEventExit;
@@ -17,7 +10,6 @@ public class TriggerEvents : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         triggerEventEnter.Invoke();
-      
     }
 
     public void OnTriggerStay(Collider other)
