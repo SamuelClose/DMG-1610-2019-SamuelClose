@@ -5,12 +5,7 @@ using UnityEngine;
 public class WeaponData : Item
 {
     public int damage;
-
     public float maxRange;
-
     public string rarityScore;
-
     public string typeOf;
-
-
 }

@@ -15,6 +15,8 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 8e851e51e3a01400bb5d20a206c555bc, type: 3}
   color: {r: 0.6415094, g: 0.027233878, b: 0.027233878, a: 1}
   prefab: {fileID: 5225532983867663263, guid: 959e40bc1266f4efc8b3d2918512feef, type: 3}
+  name: Sword
+  isDefaultItem: 0
   damage: 1
   maxRange: 4
   rarityScore: common

@@ -7,10 +7,18 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed, gravity, jumpHeight;
     public int jumpCount;
     public int jumpCountMax;
+    public Inventory inventory;
+    
+    public Transform itemsParent;
+
+    private InventorySlot[] slots;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
-       
+       inventory = Inventory.instance;
+       inventory.onItemChangedCallBack += UpdateUI;
+       slots = itemsParent.GetComponentsInChildren<InventorySlot>();
     }
     void Update()
     {
@@ -39,7 +47,10 @@ public class PlayerController : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.I))
         {
+            Instantiate(Inventory.instance);
+
             Debug.Log("Inventory open");
+            
         }
 
         if (Input.GetKey(KeyCode.I))
@@ -48,10 +59,25 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Inspecting Inventory");
         }
 
-        if (Input.GetKeyUp(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.I))
         {
             
-            Debug.Log("Inventory Closed");
+           
+        }
+    }
+
+    void UpdateUI()
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (i < inventory.items.Count)
+            {
+                slots[i].AddItem(inventory.items[i]);
+            }
+            else
+            {
+                slots[i].ClearItem();
+            }
         }
     }
 }

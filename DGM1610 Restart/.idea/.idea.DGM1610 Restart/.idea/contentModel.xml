@@ -144,12 +144,14 @@
             <e p="NormalMappedTileAnimated.shader" t="Include" />
           </e>
         </e>
+        <e p="InventorySlot.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ConsumableScripts" t="Include">
             <e p="Explosion.cs" t="Include" />
             <e p="HealthPack.cs" t="Include" />
             <e p="ItemDisplay.cs" t="Include" />
             <e p="ManaPotion.cs" t="Include" />
+            <e p="ParticleControl.cs" t="Include" />
             <e p="Pickup.cs" t="Include" />
             <e p="PowerUpParticles.cs" t="Include" />
             <e p="PowerUpsBombEffect.cs" t="Include" />
@@ -176,12 +178,12 @@
             <e p="MouseEvents.cs" t="Include" />
             <e p="Problem.cs" t="Include" />
           </e>
-          <e p="ParticleControl.cs" t="Include" />
           <e p="PlayerScripts" t="Include">
             <e p="Controller01.cs" t="Include" />
             <e p="ControllerRigidBody.cs" t="Include" />
             <e p="ControllerTransform.cs" t="Include" />
             <e p="Inventory.cs" t="Include" />
+            <e p="InventoryUI.cs" t="Include" />
             <e p="PlayerControl.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="PlayerData.cs" t="Include" />
@@ -194,7 +196,6 @@
           <e p="TriggerEvents.cs" t="Include" />
           <e p="UITextController.cs" t="Include" />
         </e>
-        <e p="TextReciver.cs" t="Include" />
       </e>
       <e p="DGM1610 Restart.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

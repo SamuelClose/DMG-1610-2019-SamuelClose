@@ -9,8 +9,11 @@ public class Pickup : MonoBehaviour
   
    void PickUp()
    {
-      Inventory.instance.Add(item);
-      Destroy(gameObject);
+      bool wasPickedUp = Inventory.instance.Add(item);
+      if (wasPickedUp)
+      {
+         Destroy(gameObject);
+      }
    }
 
    public void OnTriggerEnter(Collider other)
