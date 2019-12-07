@@ -13,8 +13,6 @@ public class PlayerDisplay1 : MonoBehaviour
     public WeaponData weapon;
     public ClothesData shirt;
     public ClothesData pants;
-    
-
     public void Awake()
     {
         playerHealth = stat.health;

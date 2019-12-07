@@ -1,14 +1,15 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-    private Vector3 position;
+    public Animator animator;
+    public Vector3 position;
     private CharacterController controller;
     public float moveSpeed, gravity, jumpHeight;
     public int jumpCount;
     public int jumpCountMax;
     public Inventory inventory;
-    
     public Transform itemsParent;
 
     private InventorySlot[] slots;
@@ -20,10 +21,11 @@ public class PlayerController : MonoBehaviour
        inventory.onItemChangedCallBack += UpdateUI;
        slots = itemsParent.GetComponentsInChildren<InventorySlot>();
     }
-    void Update()
+    void FixedUpdate()
     {
-        position.x = moveSpeed * Input.GetAxisRaw("Horizontal");
-        position.y -= gravity;
+       position.x = moveSpeed * Input.GetAxisRaw("Horizontal");
+       position.y -= gravity * Time.fixedDeltaTime;
+       animator.SetFloat("Speed", Mathf.Abs(position.x));
         
         if (controller.isGrounded)
         {
@@ -35,13 +37,7 @@ public class PlayerController : MonoBehaviour
             position.y = jumpHeight;
             jumpCount++;
         }
-        else
-        {
-            if (Input.GetKeyUp(KeyCode.Space))
-            {
-                position.y -= jumpHeight;
-            }
-        }
+      
         controller.Move(position * Time.deltaTime);
         
         
@@ -58,13 +54,9 @@ public class PlayerController : MonoBehaviour
             
             Debug.Log("Inspecting Inventory");
         }
-
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            
-           
-        }
     }
+
+   
 
     void UpdateUI()
     {

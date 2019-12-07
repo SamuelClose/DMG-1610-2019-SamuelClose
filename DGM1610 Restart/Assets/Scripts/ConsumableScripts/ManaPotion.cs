@@ -21,7 +21,7 @@ public class ManaPotion : MonoBehaviour
             PlayerDisplay1 stats = player.GetComponent<PlayerDisplay1>();
             stats.playerMagic += regen;
 
-            GetComponent<MeshRenderer>().enabled = false;
+            GetComponent<SpriteRenderer>().enabled = false;
             GetComponent<Collider>().enabled = false;
             yield return (stats.playerMagic);
         }

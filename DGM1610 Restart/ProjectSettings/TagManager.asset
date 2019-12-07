@@ -23,7 +23,7 @@ TagManager:
   - Ground
   - PowerUps
   - Background
-  - 
+  - Wall
   - 
   - 
   - 
@@ -46,39 +46,30 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: 1
+  - name: BackGround_Sky
     uniqueID: 2086818963
     locked: 0
-  - name: 2
+  - name: BackGround_Mountains
     uniqueID: 2677141979
     locked: 0
-  - name: 3
+  - name: BackGround_Clouds
     uniqueID: 943672299
     locked: 0
-  - name: 4
+  - name: BAckground_Water
     uniqueID: 2414913133
     locked: 0
-  - name: 5
+  - name: MidGround_Detail
     uniqueID: 45270605
     locked: 0
-  - name: 6
+  - name: Floor_Platforms
     uniqueID: 2787757751
     locked: 0
-  - name: 7
-    uniqueID: 3147062605
-    locked: 0
-  - name: 8
-    uniqueID: 2579327637
-    locked: 0
-  - name: 9
-    uniqueID: 1036277179
-    locked: 0
-  - name: 10
-    uniqueID: 2521772559
-    locked: 0
-  - name: Platforms
-    uniqueID: 1394380431
+  - name: Player
+    uniqueID: 3866532427
     locked: 0
   - name: pickups
     uniqueID: 1606108627
+    locked: 0
+  - name: ForeGround_Detail
+    uniqueID: 3147062605
     locked: 0

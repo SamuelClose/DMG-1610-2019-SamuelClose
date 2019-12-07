@@ -135,16 +135,11 @@
           </e>
         </e>
         <e p="Free Asset - 2D Handcrafted Art" t="Include">
-          <e p="Readme.txt" t="Include" />
-          <e p="Scripts" t="Include">
-            <e p="CamerController.cs" t="Include" />
-          </e>
           <e p="Shader" t="Include">
             <e p="NormalMappedSprite-Animated.shader" t="Include" />
             <e p="NormalMappedTileAnimated.shader" t="Include" />
           </e>
         </e>
-        <e p="InventorySlot.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ConsumableScripts" t="Include">
             <e p="Explosion.cs" t="Include" />
@@ -183,6 +178,7 @@
             <e p="ControllerRigidBody.cs" t="Include" />
             <e p="ControllerTransform.cs" t="Include" />
             <e p="Inventory.cs" t="Include" />
+            <e p="InventorySlot.cs" t="Include" />
             <e p="InventoryUI.cs" t="Include" />
             <e p="PlayerControl.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />

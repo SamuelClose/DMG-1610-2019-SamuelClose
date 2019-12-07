@@ -110,7 +110,6 @@
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineMixer.cs" />
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineShot.cs" />
     <Compile Include="Assets\Cinemachine\Timeline\CinemachineTrack.cs" />
-    <Compile Include="Assets\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\ConsumableScripts\Explosion.cs" />
     <Compile Include="Assets\Scripts\ConsumableScripts\HealthPack.cs" />
     <Compile Include="Assets\Scripts\ConsumableScripts\ItemDisplay.cs" />
@@ -141,6 +140,7 @@
     <Compile Include="Assets\Scripts\PlayerScripts\ControllerRigidBody.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\ControllerTransform.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\Inventory.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\InventoryUI.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerController.cs" />
@@ -152,11 +152,9 @@
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerRigidBodyMovement.cs" />
     <Compile Include="Assets\Scripts\TriggerEvents.cs" />
     <Compile Include="Assets\Scripts\UITextController.cs" />
-    <Compile Include="Assets\Sprites\Free Asset - 2D Handcrafted Art\Scripts\CamerController.cs" />
-    <None Include="Assets\Sprites\Free Asset - 2D Handcrafted Art\Shader\NormalMappedTileAnimated.shader" />
-    <None Include="Assets\Sprites\Free Asset - 2D Handcrafted Art\Shader\NormalMappedSprite-Animated.shader" />
+    <None Include="Assets\Free Asset - 2D Handcrafted Art\Shader\NormalMappedTileAnimated.shader" />
+    <None Include="Assets\Free Asset - 2D Handcrafted Art\Shader\NormalMappedSprite-Animated.shader" />
     <None Include="Assets\Cinemachine\ReleaseNotes.txt" />
-    <None Include="Assets\Sprites\Free Asset - 2D Handcrafted Art\Readme.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/samclose/Desktop/DGM1610-fall-2019/DMG-1610-2019-SamuelClose/DGM1610 Restart/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
