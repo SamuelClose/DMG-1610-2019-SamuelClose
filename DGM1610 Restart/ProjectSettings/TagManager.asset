@@ -55,11 +55,23 @@ TagManager:
   - name: BackGround_Clouds
     uniqueID: 943672299
     locked: 0
+  - name: New Layer
+    uniqueID: 1159304891
+    locked: 0
+  - name: yas
+    uniqueID: 191902823
+    locked: 0
   - name: BAckground_Water
     uniqueID: 2414913133
     locked: 0
   - name: MidGround_Detail
     uniqueID: 45270605
+    locked: 0
+  - name: MidGround
+    uniqueID: 530981755
+    locked: 0
+  - name: Land
+    uniqueID: 2794971401
     locked: 0
   - name: Floor_Platforms
     uniqueID: 2787757751
@@ -67,9 +79,24 @@ TagManager:
   - name: Player
     uniqueID: 3866532427
     locked: 0
+  - name: BACkgroundToBlock Player
+    uniqueID: 3767149413
+    locked: 0
   - name: pickups
     uniqueID: 1606108627
     locked: 0
   - name: ForeGround_Detail
     uniqueID: 3147062605
+    locked: 0
+  - name: Details
+    uniqueID: 1168097687
+    locked: 0
+  - name: y
+    uniqueID: 1827122177
+    locked: 0
+  - name: ad
+    uniqueID: 3400718651
+    locked: 0
+  - name: PLatForms
+    uniqueID: 1076781713
     locked: 0
