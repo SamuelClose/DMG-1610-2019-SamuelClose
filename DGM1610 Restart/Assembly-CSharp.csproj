@@ -64,10 +64,10 @@
     <Compile Include="Assets\1My_Personal_Assets\Scripts\ConsumableScripts\Healing\ManaPotion.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\ConsumableScripts\Healing\PowerUpsHealth.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\ConsumableScripts\Healing\PowerUpsMagicEffect.cs" />
-    <Compile Include="Assets\1My_Personal_Assets\Scripts\ConsumableScripts\ItemDisplay.cs" />
+    <Compile Include="Assets\1My_Personal_Assets\Scripts\ConsumableScripts\Items\ItemDisplay.cs" />
+    <Compile Include="Assets\1My_Personal_Assets\Scripts\ConsumableScripts\Items\Pickup.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\ConsumableScripts\Particles\ParticleControl.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\ConsumableScripts\Particles\PowerUpParticles.cs" />
-    <Compile Include="Assets\1My_Personal_Assets\Scripts\ConsumableScripts\Pickup.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\ConsumableScripts\Weapons\WeaponPickup.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\ConsumableScripts\Weapons\WeaponStatsDisplay.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\DataScripts_SO_Scripts\ClothesData.cs" />
@@ -81,6 +81,7 @@
     <Compile Include="Assets\1My_Personal_Assets\Scripts\Player_Information\Inventory.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\Player_Information\InventorySlot.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\Player_Information\InventoryUI.cs" />
+    <Compile Include="Assets\1My_Personal_Assets\Scripts\Player_Information\Player_Spawn.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\Player_Information\PlayerDisplay.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\Player_Information\TriggerEvents.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\Player_mController\ControllerRigidBody.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="Assets\1My_Personal_Assets\Scripts\Player_Movement\PlayerRigidBodyMovement.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\PlayerControls.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\ItemPickup.cs" />
     <Compile Include="Assets\OtherStuff\Cinemachine\Base\Runtime\Behaviours\CinemachineBlendListCamera.cs" />
     <Compile Include="Assets\OtherStuff\Cinemachine\Base\Runtime\Behaviours\CinemachineBrain.cs" />
     <Compile Include="Assets\OtherStuff\Cinemachine\Base\Runtime\Behaviours\CinemachineClearShot.cs" />

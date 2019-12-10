@@ -1,65 +1,79 @@
-﻿//Movement or Motors do all the heavy lifting, setting up all of the functions and statements
-// IF STATEMENTS HERE
+﻿using System;
+using UnityEditor;
 using UnityEngine;
-using UnityEngine.Serialization;
-
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
     public Animator animator;
     public CharacterController controller;
-    private Rigidbody _rB;
     public PlayerDisplay info;
-    public Collider Col;
+    public Transform itemsParent;
+    public GameObject newPlayer;
+    public Canvas[] canvas;
+    private Canvas _canvas;
     private static readonly int  IsJumping = Animator.StringToHash("isJumping");
     private static readonly int Death = Animator.StringToHash("Death");
-    private static readonly int IsHurt = Animator.StringToHash("isHurt");
+   private static readonly int IsHurt = Animator.StringToHash("isHurt");
+    private static readonly int Speed = Animator.StringToHash("Speed");
     public Vector3 pos;
     public bool isDead;
     public bool hurt;
-    public float dmgOt;
+    public float dmgOt = 0-3;
     public float resTimer;
-    public float hMove;
-    public float lilG;
+    public float hMove = 10;
+    public float gravity = 10;
     public float jumpH;
     public int jumpC;
     public int jumpCm;
     public float health;
+    
     public float run;
-    private GameObject prefab;
-    public GameObject newPlayer;
-    public Canvas _canvas;
-
     private void Awake()
     {
-        _canvas = GetComponent<Canvas>();
+        _canvas = itemsParent.GetComponent<Canvas>();
+        canvas = itemsParent.GetComponentsInChildren<Canvas>();
         animator = GetComponent<Animator>();
         info = GetComponent<PlayerDisplay>();
         controller = GetComponent<CharacterController>();
-
     }
     private void FixedUpdate()
     {
+        pos.y -= gravity * Time.deltaTime;
+        health = info.playerHealth;
+        if (dmgOt <= 0)
+        {
+            hurt = false;
+            animator.SetBool(IsHurt, false);
+        }
+        Walk();
         OpenI();
         CloseI();
-        health = info.playerHealth;
-        //OnTriggerEnter(Col);
-        //dmgOt -= Time.fixedDeltaTime;
-        Reborn();
         Jump();
         Crouch();
         Sprint();
         Dead();
-        Restore();
+        DamagedAnimation();
+        controller.Move(Time.fixedDeltaTime * pos);
+    }
+
+    private void Walk()
+    {
+        pos.x = Input.GetAxisRaw("Horizontal") * hMove;
+        animator.SetFloat(Speed,pos.x);
     }
 
     private void Jump()
     {
-        if (controller.isGrounded && Input.GetKeyDown(KeyCode.Space) && jumpC < jumpCm)
+        if (controller.isGrounded)
+        { 
+            pos.y = 0;
+            jumpC = 0;
+        } 
+        if (Input.GetKeyDown(KeyCode.Space) && jumpC < jumpCm)
         {
-            pos.y = jumpH;
-            jumpC++;
-            animator.SetBool(IsJumping, true);
+                pos.y = jumpH + 10;
+                jumpC++;
+                animator.SetBool(IsJumping, true);  
         }
     }
     private void Crouch()
@@ -70,18 +84,18 @@ public class PlayerMovement : MonoBehaviour
         } 
     }
     private void OpenI()
-    {
+    { 
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             _canvas.enabled = true;
         }
     }
     private void CloseI()
-    {
-          if (Input.GetKeyDown(KeyCode.Escape))
-          {
-               _canvas.enabled = false;
-          }  
+    { 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            _canvas.enabled = false;
+        }  
     }
     private void Sprint()
     {
@@ -90,16 +104,18 @@ public class PlayerMovement : MonoBehaviour
                    
         }
     }
-    private void SpawnPlayer()
+    
+    public void SpawnPlayer()
     {
-         newPlayer = Instantiate(prefab);
+         newPlayer = Instantiate(newPlayer);
     } 
     
     private void OnTriggerEnter(Collider other)
     {
-        Damaged();
+        hurt = true;
     }
-    private void Dead()
+
+    public void Dead()
     {
         if (health <= 0)
         {
@@ -108,26 +124,26 @@ public class PlayerMovement : MonoBehaviour
             isDead = true;
         }
     }
-    private void Damaged()
+    private void DamagedAnimation()
     {
-        hurt = true;
         if (hurt)
         {
+            dmgOt -= Time.fixedDeltaTime;
             animator.SetBool(IsHurt, true);
         }
     }
-    private void Restore()
-    {
-        if (dmgOt <= 0)
-        {
-            animator.SetBool(IsHurt, false);
-        }
-    }
-    private void Reborn()
+    
+    
+    
+    
+    
+    
+    
+    /*public void Respawn()
     {
         if (isDead)
         {
             SpawnPlayer();
         }
-    }
+    */
 }

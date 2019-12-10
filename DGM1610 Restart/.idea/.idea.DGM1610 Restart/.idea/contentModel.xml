@@ -21,12 +21,14 @@
                 <e p="PowerUpsHealth.cs" t="Include" />
                 <e p="PowerUpsMagicEffect.cs" t="Include" />
               </e>
-              <e p="ItemDisplay.cs" t="Include" />
+              <e p="Items" t="Include">
+                <e p="ItemDisplay.cs" t="Include" />
+                <e p="Pickup.cs" t="Include" />
+              </e>
               <e p="Particles" t="Include">
                 <e p="ParticleControl.cs" t="Include" />
                 <e p="PowerUpParticles.cs" t="Include" />
               </e>
-              <e p="Pickup.cs" t="Include" />
               <e p="Weapons" t="Include">
                 <e p="WeaponPickup.cs" t="Include" />
                 <e p="WeaponStatsDisplay.cs" t="Include" />
@@ -46,6 +48,7 @@
               <e p="Inventory.cs" t="Include" />
               <e p="InventorySlot.cs" t="Include" />
               <e p="InventoryUI.cs" t="Include" />
+              <e p="Player_Spawn.cs" t="Include" />
               <e p="PlayerDisplay.cs" t="Include" />
               <e p="TriggerEvents.cs" t="Include" />
             </e>
@@ -62,6 +65,7 @@
             <e p="PlayerMovement.cs" t="Include" />
           </e>
         </e>
+        <e p="ItemPickup.cs" t="Include" />
         <e p="OtherStuff" t="Include">
           <e p="Cinemachine" t="Include">
             <e p="Base" t="Include">
