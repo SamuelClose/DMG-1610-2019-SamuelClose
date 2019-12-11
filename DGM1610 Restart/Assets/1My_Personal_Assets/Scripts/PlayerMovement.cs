@@ -8,7 +8,9 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
     public PlayerDisplay info;
     public Transform itemsParent;
-    public GameObject newPlayer;
+    private SphereCollider _sphereCollider;
+    private BoxCollider _boxCollider;
+    private CharacterController _characterController;
     public Canvas[] canvas;
     private Canvas _canvas;
     private static readonly int  IsJumping = Animator.StringToHash("isJumping");
@@ -16,32 +18,33 @@ public class PlayerMovement : MonoBehaviour
     private static readonly int IsHurt = Animator.StringToHash("isHurt");
     private static readonly int Speed = Animator.StringToHash("Speed");
     private static readonly int Falling = Animator.StringToHash("Falling");
+    private static readonly int IsDead = Animator.StringToHash("isDead");
+    private static readonly int Attack = Animator.StringToHash("Attack");
     public Vector3 pos;
     public bool isDead;
+    public bool rezTime;
     public bool hurt;
+    public float health;
+    public float run;
     public float dmgOt = 0-3;
-    public float resTimer;
+    public float swingTimer;
     public float hMove = 10;
     public float gravity = 10;
     public float jumpH;
-    public float jumpHMax;
     public int jumpC;
     public int jumpCm;
-    public float health;
+    public int swingC;
+    public int swingCm;
     
-    public float run;
-    private SpriteRenderer _spriteRenderer;
-    private SphereCollider _sphereCollider;
-    private BoxCollider _boxCollider;
-    private CharacterController _characterController;
-    private static readonly int IsDead = Animator.StringToHash("isDead");
+    public Inventory inventory;
+    public Transform itemsParent1;
+    public InventorySlot[] slots;
 
     private void Awake()
     {
         _characterController = GetComponent<CharacterController>();
         _boxCollider = GetComponent<BoxCollider>();
         _sphereCollider = GetComponent<SphereCollider>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
         _canvas = itemsParent.GetComponent<Canvas>();
         canvas = itemsParent.GetComponentsInChildren<Canvas>();
         animator = GetComponent<Animator>();
@@ -62,19 +65,36 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool(IsDead, true);
             animator.SetBool(Death, false);
+            _characterController.enabled = false;
+            _boxCollider.enabled = false;
+            _sphereCollider.enabled = false;
+            rezTime = true;
         }
-        Walk();
+        
+        if (swingTimer <= 0)
+        {
+            animator.SetBool(Attack, false);
+        }
+        
+        
+        
+        Sprint();
+        Jump();
+        Swing();
+
         OpenI();
         CloseI();
-        Jump();
-        Crouch();
+        UpdateUI();
+        
         Dead();
         DamagedAnimation();
+        
         controller.Move(Time.fixedDeltaTime * pos);
     }
-    private void Walk()
+    
+    private void Sprint()
     {
-        pos.x = Input.GetAxisRaw("Horizontal") * hMove;
+        pos.x = Input.GetAxisRaw("Horizontal") * run;
         animator.SetFloat(Speed,pos.x);
     }
     private void Jump()
@@ -108,13 +128,23 @@ public class PlayerMovement : MonoBehaviour
             pos.y -= jumpH;
         }
     }
-    private void Crouch()
+
+    private void Swing()
     {
-        if (Input.GetKeyDown(KeyCode.LeftCommand))
+        if (Input.GetKeyDown(KeyCode.M) && swingC < swingCm)
         {
-            
-        } 
+            swingTimer -= Time.fixedDeltaTime;
+            Debug.Log("I can Swing my Sword");
+            swingC++;
+            animator.SetBool(Attack, true);
+        }
     }
+
+    void Swung()
+    {
+        animator.SetBool(Attack, false);
+    }
+
     private void OpenI()
     { 
         if (Input.GetKeyDown(KeyCode.Tab))
@@ -129,13 +159,6 @@ public class PlayerMovement : MonoBehaviour
             _canvas.enabled = false;
         }  
     }
-    private void Sprint()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            pos.x = Input.GetAxisRaw("Horizontal") * run;
-        }
-    }
     private void OnTriggerEnter(Collider other)
     {
         hurt = true;
@@ -145,7 +168,6 @@ public class PlayerMovement : MonoBehaviour
         if (health <= 0)
         {
             animator.SetBool(Death, true);
-            //Destroy(gameObject, resTimer); 
             isDead = true;
         }
     }
@@ -157,16 +179,20 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool(IsHurt, true);
         }
     }
-    private void Respawn()
+    
+    
+    void UpdateUI()
     {
+        for (int i = 0; i < slots.Length; i++)
         {
-            SpawnPlayer(); 
-        }
-    }
-    private void SpawnPlayer()
-    {
-        {
-            newPlayer = Instantiate(newPlayer);
+            if (i < inventory.items.Count)
+            {
+                slots[i].AddItem(inventory.items[i]);
+            }
+            else
+            {
+                slots[i].ClearItem();
+            }
         }
     }
 }

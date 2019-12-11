@@ -3,11 +3,8 @@ using UnityEngine;
 public class InventoryUI : MonoBehaviour
 {
     public Inventory inventory;
-
     public Transform itemsParent;
-
     public InventorySlot[] slots;
-    
     private void Start()
     {
         inventory = Inventory.instance;

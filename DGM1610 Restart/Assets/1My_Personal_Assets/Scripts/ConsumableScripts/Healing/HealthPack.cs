@@ -8,29 +8,13 @@ public class HealthPack : MonoBehaviour
 {
 
     public float regen = 10f;
-
+    public PlayerDisplay stats;
+    public void Awake()
+    {
+        stats = GetComponent<PlayerDisplay>();
+    }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
-        {
-            StartCoroutine(Pickup(other));
-        }
-
-
-        IEnumerator Pickup(Collider player)
-        {
-            
-            
-            PlayerDisplay stats = player.GetComponent<PlayerDisplay>();
-            stats.playerHealth += regen;
-            GetComponent<SpriteRenderer>().enabled = false;
-            GetComponent<Collider>().enabled = false;
-            yield return (stats.playerHealth < stats.playerMaxHealth);
-        }
-    }
-
-    void Update()
-    {
-        
+        stats.playerHealth += regen;
     }
 }

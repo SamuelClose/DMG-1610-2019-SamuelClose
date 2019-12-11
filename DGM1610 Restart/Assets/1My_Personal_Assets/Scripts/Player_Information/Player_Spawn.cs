@@ -18,6 +18,4 @@ public class Player_Spawn : MonoBehaviour
             newPlayer = Instantiate(newPlayer);
         }
     }
-   
-    
 }

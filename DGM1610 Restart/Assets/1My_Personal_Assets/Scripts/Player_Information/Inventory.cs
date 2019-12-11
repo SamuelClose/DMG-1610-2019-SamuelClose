@@ -7,11 +7,8 @@ public class Inventory : MonoBehaviour
 {
 
     public int space = 12;
-    
     public List<Item> items = new List<Item>();
-
     public static Inventory instance;
-
     private void Awake()
     {
         if (instance != null)
@@ -24,7 +21,6 @@ public class Inventory : MonoBehaviour
 
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallBack;
-    
     public bool Add(Item item)
     {
         if (!item.isDefaultItem)
@@ -46,10 +42,5 @@ public class Inventory : MonoBehaviour
 
         onItemChangedCallBack?.Invoke();
 
-    }
-
-    private void Update()
-    {
-        
     }
 }

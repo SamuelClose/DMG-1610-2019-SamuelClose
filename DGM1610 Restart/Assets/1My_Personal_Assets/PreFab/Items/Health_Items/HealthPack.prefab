@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 903365032532007815}
-  - component: {fileID: 903365032532007814}
   - component: {fileID: 8074114947727448272}
   - component: {fileID: 5767840185257044953}
+  - component: {fileID: 4109759956573005770}
   m_Layer: 0
   m_Name: HealthPack
   m_TagString: Untagged
@@ -28,24 +28,11 @@ Transform:
   m_GameObject: {fileID: 903365032532007811}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.18, y: 1.3, z: 4.36}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.31174, y: 0.31174, z: 0.31174}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &903365032532007814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 903365032532007811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90df8abd5e93042ab95bbcf0b12c19bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  regen: 10
 --- !u!212 &8074114947727448272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -108,3 +95,15 @@ CapsuleCollider:
   m_Height: 2.84
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4109759956573005770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903365032532007811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c07542dfff02c4d15bdc6868ffdddeb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
