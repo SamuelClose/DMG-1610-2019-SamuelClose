@@ -1793,7 +1793,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1552, y: -903}
+  m_AnchoredPosition: {x: 1837, y: -903}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &5149095230052810508
@@ -5616,8 +5616,6 @@ MonoBehaviour:
   health: 0
   jumpC: 0
   jumpCm: 1
-  swingC: 0
-  swingCm: 1
 --- !u!114 &3288208384566974272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5632,7 +5630,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info: {fileID: 142938172642483259}
   damage: 10
-  health: 0
 --- !u!114 &7513397384764276884
 MonoBehaviour:
   m_ObjectHideFlags: 0

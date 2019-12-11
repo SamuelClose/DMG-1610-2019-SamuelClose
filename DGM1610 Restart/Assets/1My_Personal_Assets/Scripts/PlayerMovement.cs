@@ -26,8 +26,6 @@ public class PlayerMovement : MonoBehaviour
     public int health;
     public int jumpC;
     public int jumpCm;
-    public int swingC;
-    public int swingCm;
     private void Awake()
     {
         _characterController = GetComponent<CharacterController>();
@@ -106,11 +104,14 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Swing()
     {
-        if (Input.GetKeyDown(KeyCode.M) && swingC < swingCm)
+        if (Input.GetKeyDown(KeyCode.M))
         {
             Debug.Log("I can Swing my Sword");
-            swingC++;
             animator.SetBool(Attack, true);
+        }
+        if (Input.GetKeyUp(KeyCode.M))
+        {
+            animator.SetBool(Attack, false);
         }
     }
     private void OpenI()
@@ -143,5 +144,4 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool(IsHurt, true);
         }
     }
-   
 }
