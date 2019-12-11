@@ -5,6 +5,14 @@ public class PowerUpsHealth : MonoBehaviour
     public int multiplier = 2;
     public int time = 4;
     public bool powerUp;
+    private Collider _collider;
+    private MeshRenderer _meshRenderer;
+    private void Awake()
+    {
+        _meshRenderer = GetComponent<MeshRenderer>();
+        _collider = GetComponent<Collider>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -13,13 +21,12 @@ public class PowerUpsHealth : MonoBehaviour
         }
     }
     IEnumerator Pickup(Collider player)
-    { 
-        PlayerDisplay stats = player.GetComponent<PlayerDisplay>();
-        stats.playerHealth *= multiplier;
-        GetComponent<MeshRenderer>().enabled = false;
-        GetComponent<Collider>().enabled = false;
+    {
+        //PlayerDisplay.playerHealth *= multiplier;
+        _meshRenderer.enabled = false;
+        _collider.enabled = false;
         yield return new WaitForSeconds(time);
-        stats.playerHealth /= multiplier;
+        //PlayerDisplay.playerHealth /= multiplier;
     }
 }
 

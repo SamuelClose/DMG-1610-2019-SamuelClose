@@ -5,16 +5,16 @@ using UnityEngine;
 public class ItemPickup : MonoBehaviour
 {
     private SpriteRenderer _spriteRenderer;
-    private SphereCollider _sphereCollider;
+    public Collider _collider;
     public void Awake()
     {
-        _sphereCollider = GetComponent<SphereCollider>();
+      _collider = GetComponent<SphereCollider>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         _spriteRenderer.enabled = false;
-        _sphereCollider.enabled = false;
+        _collider.enabled = false;
     }
 }

@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEngine;
-
+﻿using UnityEngine;
 public class HealthPack : MonoBehaviour
 {
-
-    public float regen = 10f;
+    public int regen = 10;
     public PlayerDisplay stats;
     public void Awake()
     {
@@ -15,6 +9,9 @@ public class HealthPack : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        stats.playerHealth += regen;
+        if (other.CompareTag("HealthBoost"))
+        {
+            stats.playerHealth += regen;
+        }
     }
 }

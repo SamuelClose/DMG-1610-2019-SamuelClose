@@ -1,26 +1,16 @@
-﻿
-using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
-
 public class PowerUpsBombEffect : MonoBehaviour
 {
+    public PlayerDisplay info;
     public int damage = 10;
-    public PlayerDisplay stats;
-    public void Awake()
-    {
-        stats = GetComponent<PlayerDisplay>();
-    }
-
     private void OnTriggerEnter(Collider other)
     {
-        stats.playerHealth -= damage;
+        if (other.CompareTag("bomb"))
+        {
+            info.playerHealth -= damage;
+        }
     }
-
-
-   
-       
 }
    
 

@@ -79,6 +79,7 @@
     <Compile Include="Assets\1My_Personal_Assets\Scripts\DataScripts_SO_Scripts\PlayerData.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\DataScripts_SO_Scripts\Stats.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\DataScripts_SO_Scripts\WeaponData.cs" />
+    <Compile Include="Assets\1My_Personal_Assets\Scripts\Health_UI_Update.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\Player_Information\Inventory.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\Player_Information\InventorySlot.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\Player_Information\InventoryUI.cs" />
@@ -148,8 +149,15 @@
     <Compile Include="Assets\OtherStuff\Cinemachine\PostFX\CinemachinePostProcessing.cs" />
     <Compile Include="Assets\OtherStuff\Cinemachine\Timeline\CinemachineMixer.cs" />
     <Compile Include="Assets\OtherStuff\Cinemachine\Timeline\CinemachineShot.cs" />
+    <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\AsteroidController.cs" />
+    <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\HealthPickupController.cs" />
+    <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\PlayerHealth.cs" />
+    <Compile Include="Assets\Simple Health Bar\Scripts\SimpleHealthBar.cs" />
     <None Include="Assets\OtherStuff\Free Asset - 2D Handcrafted Art\Shader\NormalMappedTileAnimated.shader" />
     <None Include="Assets\OtherStuff\Free Asset - 2D Handcrafted Art\Shader\NormalMappedSprite-Animated.shader" />
+    <None Include="Assets\Simple Health Bar\README.txt" />
     <None Include="Assets\OtherStuff\Cinemachine\ReleaseNotes.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/samclose/Desktop/DGM1610-fall-2019/DMG-1610-2019-SamuelClose/DGM1610 Restart/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

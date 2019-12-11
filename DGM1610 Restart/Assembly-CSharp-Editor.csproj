@@ -105,6 +105,8 @@
     <Compile Include="Assets\OtherStuff\Cinemachine\PostFX\Editor\CinemachinePostProcessingEditor.cs" />
     <Compile Include="Assets\OtherStuff\Cinemachine\PostFX\Editor\PostFXAutoImport.cs" />
     <Compile Include="Assets\OtherStuff\Cinemachine\Timeline\Editor\CinemachineShotEditor.cs" />
+    <Compile Include="Assets\Simple Health Bar\Editor\SimpleHealthBarEditor.cs" />
+    <Compile Include="Assets\Simple Health Bar\Editor\SimpleHealthBarWindow.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/samclose/Desktop/DGM1610-fall-2019/DMG-1610-2019-SamuelClose/DGM1610 Restart/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

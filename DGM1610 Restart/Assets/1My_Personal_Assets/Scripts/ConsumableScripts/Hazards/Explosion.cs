@@ -15,7 +15,7 @@ public class Explosion : MonoBehaviour
 
     private IEnumerator Pickup(Collider player)
     {
-        GetComponent<SphereCollider>().enabled = false;
+        GetComponent<Collider>().enabled = false;
         GetComponent<ParticleSystem>().Stop();
         yield return new ParticleSystemRenderer();
     }
