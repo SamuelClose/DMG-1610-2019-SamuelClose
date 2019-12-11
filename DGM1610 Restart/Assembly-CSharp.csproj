@@ -65,6 +65,7 @@
     <Compile Include="Assets\1My_Personal_Assets\Scripts\ConsumableScripts\Healing\PowerUpsHealth.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\ConsumableScripts\Healing\PowerUpsMagicEffect.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\ConsumableScripts\Items\ItemDisplay.cs" />
+    <Compile Include="Assets\1My_Personal_Assets\Scripts\ConsumableScripts\Items\ItemPickup.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\ConsumableScripts\Items\Pickup.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\ConsumableScripts\Particles\ParticleControl.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\ConsumableScripts\Particles\PowerUpParticles.cs" />
@@ -91,7 +92,10 @@
     <Compile Include="Assets\1My_Personal_Assets\Scripts\Player_Movement\PlayerRigidBodyMovement.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\PlayerControls.cs" />
     <Compile Include="Assets\1My_Personal_Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\ItemPickup.cs" />
+    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshLink.cs" />
+    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifier.cs" />
+    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
+    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
     <Compile Include="Assets\OtherStuff\Cinemachine\Base\Runtime\Behaviours\CinemachineBlendListCamera.cs" />
     <Compile Include="Assets\OtherStuff\Cinemachine\Base\Runtime\Behaviours\CinemachineBrain.cs" />
     <Compile Include="Assets\OtherStuff\Cinemachine\Base\Runtime\Behaviours\CinemachineClearShot.cs" />
